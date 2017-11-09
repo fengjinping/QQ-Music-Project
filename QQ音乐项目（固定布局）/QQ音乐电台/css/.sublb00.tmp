@@ -1,0 +1,650 @@
+/*
+* @Author: Bruce
+* @Date:   2017-08-10 11:47:16
+* @Last Modified by:   Bruce
+* @Last Modified time: 2017-08-11 17:29:53
+*/
+
+/* 这个css文件是每个页面都可以使用的，因为有很多页面的头部和底部是一样或相似，所以把头部和底部的样式单独抽取出来，避免在其他页面重复 */
+
+/* ----------网站的顶部 start ---------- */
+#web_top {
+	background: rgb(28,102,253);
+}
+/* 关闭的按钮 */
+#web_top i {
+	position: absolute;
+	top:0;
+	right: 0;
+	width: 20px;
+	height: 20px;
+	background: rgba(0,0,0,0.5);
+	font-size: 20px;
+	text-align: center;
+	line-height: 20px;
+	color:#fff;
+	cursor: pointer;
+}
+
+#web_top .container {
+	position: relative;
+}
+/* ----------网站的顶部 end   ---------- */
+
+
+
+/* ----------快捷菜单 start   ---------- */
+#shortcut {
+	height: 30px;
+	background: #e3e4e5;
+}
+
+/* 左侧的地点 */
+#shortcut .fl .down {
+	margin-left: 210px;
+	line-height: 30px;
+	height:30px;
+}
+/* 图标 */
+#shortcut .fl .down i {
+	color:red;
+	padding-right: 5px;
+}
+
+/* 右侧的菜单项 */
+#shortcut .fr ul li {
+	float: left;
+	line-height: 30px;
+}
+/* 线 */
+#shortcut .fr ul li.line {
+	height:10px;
+	border-left: 1px solid #ccc;
+	margin-top: 11px;
+	margin-left: 12px;
+	margin-right: 12px;
+}
+#shortcut .fr ul li:last-child {
+	position: relative;
+}
+#shortcut .fr ul li:last-child span{
+	width: 60px;
+	height: 60px;
+	position: absolute;
+	background: url(../images/ewm.png) no-repeat;
+	top:30px;
+	left: 50%;
+	margin-left: -30px;
+	
+}
+
+#shortcut .fr ul li:last-child i {
+	border:5px solid #e3e4e5;
+	border-bottom-color:#fff;
+	position: absolute;
+	bottom: 0px;
+	left: 50%;
+	margin-left: -5px;
+}
+/* ----------快捷菜单 end     ---------- */
+
+
+/* ----------头部 start     ---------- */
+#header {
+	height: 140px;
+}
+
+/* 左侧 */
+#header .fl {
+	height: 140px;
+	width: 190px;
+	position: relative;
+}
+
+#header .fl a {
+	width: 190px;
+	height: 170px;
+	background:#fff url(../images/logo.png) no-repeat;
+	position: absolute;
+	top:-30px;
+	text-indent: -100px;
+	overflow: hidden;
+}
+
+/* 右侧 */
+#header .fr {
+	height: 115px;
+	width: 1000px;
+	padding-top: 25px;
+}
+/* 搜索模块 */
+#header .fr>.search {
+	width: 550px;
+	height: 35px;
+	margin-left: 130px;
+	float: left;
+	position: relative;
+}
+/* 输入框 */
+#header .fr>.search>input {
+	float: left;
+}
+#header .fr>.search>input[type=text] {
+	width: 493px;
+	height: 33px;
+	border:1px solid #f10215;
+	padding-left: 5px;
+}
+/* 按钮 */
+#header .fr>.search>input[type=button] {
+	width: 50px;
+	height: 35px;
+	background:#f10215;
+	font-size: 18px;
+	color:#fff;
+}
+/* 相机 */
+#header .fr>.search>span {
+	width: 19px;
+	height: 15px;
+	position: absolute;
+	background: url(../images/sprite-photo-search.png) no-repeat 0 0;
+	right: 70px;
+	top:50%;
+	margin-top: -8px;
+}
+
+#header .fr>.search>span:hover {
+	background-position: -30px 0;
+}
+
+/* 购物车模块 */
+#header .fr>.car {
+	width: 190px;
+	height: 35px;
+	background: #fff;
+	float: left;
+	margin-left: 30px;
+	border:1px solid #e3e4e5;
+	text-align: center;
+	line-height: 35px;
+	color:#f10215;
+	position: relative;
+}
+
+#header .fr>.car a {
+	color:#f10215;
+}
+
+#header .fr>.car>span {
+	width: 14px;
+	height: 14px;
+	background:#f10215 ;
+	border-radius: 50%;
+	color:#fff;
+	position: absolute;
+	line-height: 14px;
+}
+
+/* 热词搜索 */
+#header .fr>.hotwords {
+	width: 550px;
+	height: 30px;
+	float: left;
+	margin-left: 130px;
+}
+
+#header .fr>.hotwords li {
+	float: left;
+	line-height: 30px;
+}
+
+#header .fr>.hotwords li+li {
+	margin-left: 10px;
+}
+
+/* 导航 */
+#header .fr>.nav {
+	width: 808px;
+	height: 30px;
+	margin-top: 15px;
+	float: left;
+}
+#header .fr>.nav ul {
+	padding-left: 40px;
+}
+#header .fr>.nav ul li {
+	float: left;
+	line-height: 30px;
+	font-size: 18px;
+	font-weight: bold;
+	margin-right: 30px;
+}
+
+#header .fr>.nav ul li a {
+	color:#555;
+}
+#header .fr>.nav ul li a:hover {
+	color:#f10215;
+}
+#header .fr>.nav ul li.line {
+	height: 10px;
+	border-left: 1px solid #ccc;
+	margin-top: 11px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+#header .fr>.nav ul li.end {
+	margin-right: 0;
+}
+/* 领券 */
+#header .fr>.cash {
+	width: 190px;
+	height: 40px;
+	float: left;
+}
+/* ----------头部 end       ---------- */
+
+
+
+/* ----------底部 start       ---------- */
+#footer {
+	height: 500px;
+	background: #eaeaea;
+}
+
+/* 服务模块 */
+#footer>.service {
+	height: 102px;
+	border-bottom: 1px solid #dedede;
+}
+
+#footer>.service li {
+	float: left;
+	font-size:18px;
+	font-weight: bold;
+	line-height: 102px;
+	position: relative;
+	width: 253px;
+	padding-left: 45px;
+}
+#footer>.service li:last-child {
+	width: 163px;
+
+}
+
+#footer>.service li::before {
+	content: "";
+	position: absolute;
+	width: 36px;
+	height: 42px;
+	background: url(../images/ico_service.png) no-repeat;
+	top:50%;
+	margin-top: -21px;
+	left: 0;
+}
+
+#footer>.service ul {
+	padding-left: 34px;
+}
+
+#footer>.service li:nth-child(2)::before {
+	background-position: 0 -43px;
+}
+
+#footer>.service li:nth-child(3)::before {
+	background-position: 0 -86px;
+}
+
+#footer>.service li:nth-child(4)::before {
+	background-position: 0 bottom;
+}
+
+/* 帮助中心 */
+#footer>.help {
+	padding-top: 22px;
+}
+#footer>.help dl>dt {
+	font-size: 14px;
+	font-weight: bold;
+	height: 28px;
+
+}
+
+#footer>.help dl>dd {
+	height: 22px;
+}
+
+#footer>.help dl {
+	float: left;
+	width: 198px;
+}
+
+#footer>.help dl:last-child dt {
+	text-align: center;
+}
+
+#footer>.help dl:last-child {
+	height: 150px;
+	background: url(../images/ico_footer.png) no-repeat;
+}
+
+#footer>.help dl:last-child p {
+	width: 180px;
+	padding-left: 8px;
+}
+
+#footer>.help dl:last-child dd a {
+	float: right;
+	font-family: "宋体";
+}
+
+#footer>.help>.container {
+	border-bottom: 1px solid #dedede;
+	padding-bottom: 22px;
+}
+
+/* 外链接 */
+#footer>.outachor {
+	text-align: center;
+}
+
+#footer>.outachor p span {
+	padding:0 10px;
+}
+#footer>.outachor p {
+	line-height: 22px;
+}
+#footer>.outachor p:first-child {
+	line-height: 38px;
+}
+#footer>.outachor p:last-child {
+	padding-top: 15px;
+}
+#footer>.outachor p:last-child a{
+	width: 101px;
+	height: 30px;
+	display: inline-block;
+	background: url(../images/ico_footer.png) no-repeat 0 -151px;
+}
+/* ----------底部 end         ---------- */
+
+
+/* ----------main start         ---------- */
+/* banner的左侧样式 */
+#main .banner .col-l {
+	width: 190px;
+	height: 480px;
+	background: #6e6568;
+	float: left;
+	color:#fff;
+}
+#main .banner .col-l ul {
+	padding-top: 16px;
+}
+#main .banner .col-l ul li {
+	padding-left: 12px;
+	line-height: 28px;
+}
+#main .banner .col-l ul li a {
+	color:#fff;
+}
+
+#main .banner .col-l ul li a:hover {
+	color:red;
+}
+
+#main .banner .col-l ul li:hover {
+	background: rgba(255,255,255,0.6)
+}
+
+/* banner的中间样式 */
+#main .banner .col-m {
+	width: 790px;
+	height: 480px;
+	float: left;
+	margin:0 10px;
+} 
+/* banner的中间样式 上 */
+#main .banner .col-m .top {
+	height: 340px;
+	position: relative;
+}
+/* 一组小点按钮的样式 */
+#main .banner .col-m .top ul li {
+	width:12px;
+	height: 12px;
+	background: #fff;
+	border-radius: 50%;
+	float: left;
+}
+#main .banner .col-m .top ul li:first-child {
+	background: red;
+}
+#main .banner .col-m .top ul li+li {
+	margin-left: 10px;
+}
+
+#main .banner .col-m .top ul {
+	position: absolute;
+	bottom: 20px;
+	background: rgba(255,255,255,0.5);
+	padding:5px 8px;
+	left: 50%;
+	margin-left: -91px;
+	border-radius: 10px;
+}
+/* 左右按钮 */
+#main .banner .col-m .top span {
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	background: rgba(0,0,0,0.6);
+	color:#fff;
+	font:bold 30px/50px "宋体";
+	text-align: center;
+	top:50%;
+	margin-top: -25px;
+	display: none;
+}
+
+#main .banner .col-m .top span.btn-r {
+	right: 0;
+}
+
+#main .banner .col-m .top span:hover {
+	background: rgba(0,0,0,0.3);
+}
+
+#main .banner .col-m .top:hover span{
+	display: inline-block;
+}
+
+/* banner的中间样式 下 */
+#main .banner .col-m .bottom {
+	height: 130px;
+	margin-top: 10px;
+}
+
+/* banner的右侧样式 */
+#main .banner .col-r {
+	width: 190px;
+	height: 480px;
+	background: #fff;
+	float: left;
+}
+/* 个人信息模块 */
+#main .banner .col-r>.person-Info {
+	height: 85px;
+	border-bottom: 1px solid #e6e6e6;
+	padding:15px;
+	position: relative;
+}
+/* 头像外面的边框 */
+#main .banner .col-r>.person-Info .hederImg {
+	width: 40px;
+	height: 40px;
+	padding:3px;
+	border:2px solid #d1b372;
+	border-radius: 50%;
+}
+/* 头像图片 */
+#main .banner .col-r>.person-Info .hederImg img {
+	width: 40px;
+	border-radius: 50%;
+}
+
+/* 新人福利和plus会员 */
+#main .banner .col-r>.person-Info .bottom {
+	position: absolute;
+	bottom:15px;
+}
+#main .banner .col-r>.person-Info .bottom a {
+	width: 70px;
+	height: 20px;
+	border:2px solid #e01222;
+	float: left;
+	text-align: center;
+	line-height: 20px;
+	color:#e01222;
+}
+
+#main .banner .col-r>.person-Info .bottom a:first-child {
+	margin-right: 10px;
+}
+
+#main .banner .col-r>.person-Info .bottom a:hover {
+	background: #e01222;
+	color:#fff;
+}
+
+/* tab切换的样式 */
+#main .banner .col-r>.tab {
+	padding:0 13px;
+}
+#main .banner .col-r>.tab>.top ul li {
+	float: left;
+	line-height: 26px;
+}
+
+#main .banner .col-r>.tab>.top ul li:last-child {
+	float: right;
+}
+
+#main .banner .col-r>.tab>.top ul {
+	border-bottom: 1px solid #e6e6e6;
+}
+
+#main .banner .col-r>.tab>.top ul li.line {
+	height: 17px;
+	border-left: 1px solid #e6e6e6;
+	margin: 5px 12px 0 12px;
+}
+#main .banner .col-r>.tab>.bottom {
+	padding-top: 10px;
+}
+#main .banner .col-r>.tab>.bottom li{
+	line-height: 25px;
+
+}
+
+/* 服务模块 */
+#main .banner .col-r>.service {
+	overflow: hidden;
+	margin-top: 17px;
+}
+#main .banner .col-r>.service ul {
+	width: 192px;
+	margin-left: -2px;
+}
+#main .banner .col-r>.service li {
+	width: 47px;
+	height: 69px;
+	border-left: 1px solid #e6e6e6;
+	border-top: 1px solid #e6e6e6;
+	float: left;
+	position: relative;
+}
+
+#main .banner .col-r>.service li a {
+	display: block;
+	height: 24px;
+	text-align: center;
+	padding-top: 45px;
+	position: relative;
+}
+
+#main .banner .col-r>.service li a:before {
+	content: "";
+	width: 24px;
+	height: 24px;
+	background: url(../images/sprite_fs@1x.png) no-repeat;
+	position: absolute;
+	top:15px;
+}
+
+#main .banner .col-r>.service li:first-child a:before {
+	background-position: 0 -87px;
+}
+#main .banner .col-r>.service li:nth-child(2) a:before {
+	background-position: 0 -43px;
+}
+
+#main .banner .col-r>.service li:first-child:before {
+	content: "减";
+	width: 15px;
+	height: 20px;
+	position: absolute;
+	background: url(../images/sprite_index@1x.png) no-repeat -52px -20px;
+	/* background-size: x y; */
+	background-size: 109px 94px;
+	text-align: center;
+	color: #fff;
+	right: 0;
+
+
+}
+
+#main .banner .col-r>.service li:nth-child(2):before {
+	content: "抢";
+	width: 15px;
+	height: 20px;
+	position: absolute;
+	background: url(../images/sprite_index@1x.png) no-repeat -52px -20px;
+	/* background-size: x y; */
+	background-size: 109px 94px;
+	text-align: center;
+	color: #fff;
+	right: 0;
+
+
+}
+/* ----------main end         ---------- */
+
+
+
+/* 活动模块的动画 */
+#main .banner .container {
+	position: relative;
+}
+#main .banner .container .active {
+	width: 200px;
+	height: 480px;
+	background:url(../images/banner-aside.png) no-repeat;
+	position: absolute;
+	left: -200px;
+}
+
+#main .banner .container .active .box {
+	width: 0px;
+	height: 480px;
+	background:red;
+	position: absolute;
+	left: 200px;
+	transition:width 0.5s;
+	overflow: hidden;
+}
+
+#main .banner .container .active:hover .box {
+	width:1000px;
+}

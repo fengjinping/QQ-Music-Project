@@ -1,0 +1,774 @@
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+ul {
+    list-style: none;
+}
+
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #868686;
+}
+
+/*顶部..........................*/
+.one .top {
+    height: 60px;
+    width: 1366px;
+    background-color: black;
+}
+
+.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.one .top .left {
+    margin-left: 82px;
+    color: white;
+    line-height: 60px;
+    float: left;
+    width: 263px;
+    background: url("imgs/15.jpg") left center no-repeat;
+}
+
+.one .top .left a {
+    font-size: 30px;
+    font-family: "微软雅黑";
+    color: white;
+    margin-left: 40px;
+
+}
+
+.one .top .middle li {
+    float: left;
+    line-height: 56px;
+    font-size: 15px;
+    margin-right: 103px;
+    /*border-bottom: 4px solid red;*/
+}
+
+.one .top .middle li a:hover {
+    color: white;
+    font-weight: bold;
+}
+
+.one .top .right li {
+    float: right;
+    line-height: 60px;
+    font-size: 15px;
+    /*margin-right: 103px;*/
+
+}
+
+.one .top .right li:first-child {
+    margin-left: 22px;
+    margin-right: 80px;
+    font-size: 12px;
+}
+
+.one .top .right li span {
+    color: white;
+    border-bottom: 1px solid #fff;
+
+}
+
+.one .top .right li:last-child a {
+    border: 1px solid #ea524e;
+    padding: 7px 12px;
+    color: red;
+
+}
+
+.one .top .middle li.active {
+    border-bottom: 1px solid red;
+    /*border-bottom: 0;*/
+}
+
+/*顶部结束........................................*/
+
+/*主体开始......................................................*/
+.body ul .one {
+    background: url("images/2.jpg");
+    height: 768px;
+    width: 1366px;
+}
+
+.body ul .one .erJi {
+    height: 500px;
+    width: 768px;
+    margin: 0 auto;
+}
+
+.body ul .one .ziZhu {
+    width: 800px;
+    height: 185px;
+    margin: 0 auto;
+    /*background-color: gold;*/
+}
+
+.body ul .one .ziZhu li {
+    width: 120px;
+    height: 75px;
+    /*background-color: red;*/
+    background: url("images/60.gif") center no-repeat;
+    float: left;
+    margin-top: 45px;
+    margin-left: 34px;
+}
+
+.body ul .one .ziZhu li + li {
+    margin-left: 190px;
+}
+
+.body ul .one .ziZhu li span {
+    width: 120px;
+    height: 19px;
+    background-color: #181818;
+    font-size: 16px;
+    line-height: 19px;
+    margin-top: 28px;
+    display: inline-block;
+    color: #999;
+    text-align: center;
+}
+
+/*-----------------第二张图片----------------*/
+.body ul .two {
+    background: url("images/3.jpg");
+    height: 768px;
+    width: 1366px;
+}
+
+/*-----------------第二张图片标题----------------*/
+
+.body ul .two .neiRong p {
+    margin: 0 auto;
+    padding-top: 58px;
+    padding-bottom: 30px;
+    text-align: center;
+    font-size: 30px;
+    width: 220px;
+    border-bottom: 2px solid red;
+}
+
+.body ul .two .neiRong ul {
+    margin: 0 auto;
+    width: 1160px;
+    height: 191px;
+    padding-top: 123px;
+
+}
+
+/*-----------------第二张图片三段话----------------*/
+
+.body ul .two .neiRong ul li {
+    text-align: center;
+    width: 281px;
+    height: 383px;
+    float: left;
+    background: url("images/21.png") no-repeat;
+
+}
+
+.body ul .two .neiRong ul h3 {
+    line-height: 50px;
+    padding-top: 40px;
+}
+
+.body ul .two .neiRong ul li + li {
+    margin-left: 150px;
+}
+
+/*-----------------第三张图片----------------*/
+
+.body ul .three {
+    background: url("images/7.jpg");
+    height: 768px;
+    width: 1366px;
+}
+
+.body ul .three .neiRong .baoGuang {
+    margin: 0 auto;
+    padding-top: 58px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 30px;
+    width: 220px;
+    border-bottom: 2px solid red;
+    color: white;
+}
+
+.body ul .three .neiRong .anXin {
+    margin: 0 auto;
+    color: #9daaaa;
+    text-align: center;
+    font-size: 18px;
+    padding-top: 30px;
+
+}
+
+.body ul .three .neiRong .lunBoTu {
+    width: 1104px;
+    height: 161px;
+    /*background-color: #e01222;*/
+    margin: 0 auto;
+    margin-top: 95px;
+    margin-bottom: 54px;
+}
+
+.body ul .three .neiRong .xianShang {
+    margin: 0 auto;
+    height: 50px;
+    width: 680px;
+    color: #ccccad;
+    font-size: 16px;
+    line-height: 30px;
+    padding-top: 50px;
+    text-indent: 2em;
+}
+
+/*-----------------四张图-----------------*/
+.body ul .three .neiRong .lunBoTu li {
+    float: left;
+    margin-right: 16px;
+}
+
+.body ul .three .neiRong .lunBoTu img {
+    transition: 2s;
+}
+
+.body ul .three .neiRong .lunBoTu img:hover {
+    transform: rotateX(360deg);
+}
+
+/*-----------------第四张图片----------------*/
+
+.body ul .four {
+    background: url("images/6.jpg");
+    height: 768px;
+    width: 1366px;
+}
+
+.body ul .four .neiRong .bianXian {
+    margin: 0 auto;
+    padding-top: 58px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 30px;
+    width: 220px;
+    border-bottom: 2px solid red;
+}
+
+.body ul .four .neiRong .huiYuan {
+    width: 687px;
+    margin: 0 auto;
+
+    color: #888;
+    text-align: center;
+    font-size: 18px;
+    padding-top: 30px;
+
+}
+
+.body ul .four .neiRong .touXiang {
+    height: 317px;
+    width: 960px;
+    margin: 0 auto;
+    margin-top: 79px;
+}
+
+.body ul .four .neiRong .touXiang li {
+    float: left;
+    width: 273px;
+    height: 317px;
+    /*background: red;*/
+}
+
+.body ul .four .neiRong .touXiang li + li {
+    margin-left: 67.5px;
+}
+
+.huiSe1 {
+    background: url("images/53.1.gif");
+}
+
+.caiSe1 {
+    background: url("images/54.1.gif");
+}
+
+.huiSe2 {
+    background: url("images/55.1.gif");
+}
+
+.caiSe2 {
+    background: url("images/56.1.gif");
+}
+
+.huiSe3 {
+    background: url("images/57.1.gif");
+}
+
+.caiSe3 {
+    background: url("images/59.1.gif");
+}
+
+/*-----------------第五张图片----------------*/
+
+.body ul .five {
+    background: url("images/9.jpg");
+    height: 768px;
+    width: 1366px;
+
+}
+
+.body ul .five .neiRong .hangNei {
+    margin: 0 auto;
+    padding-top: 58px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 23px;
+    width: 220px;
+    color: white;
+    border-bottom: 2px solid red;
+}
+
+.body ul .five .neiRong .renShu {
+    width: 733px;
+    margin: 0 auto;
+    line-height: 49px;
+    font-size: 23px;
+    color: white;
+    margin-top: 111px;
+    margin-bottom: 120px;
+}
+
+.body ul .five .neiRong .chaKan {
+    margin: 0 auto;
+    width: 180px;
+    font-size: 20px;
+    border: 2px solid #ea524e;
+    padding: 20px 33px;
+    color: #ea524e;
+}
+
+.body ul .five .neiRong .chaKan a {
+    color: #ea524e;
+}
+
+.body ul .five .neiRong .chaKan a:hover {
+    color: #fff;
+}
+
+/*-----------------第六张图片----------------*/
+
+.body ul .six {
+    background: url("images/11.jpg");
+    height: 768px;
+    width: 1366px;
+}
+
+.body ul .six .siZhangTu {
+    width: 1230px;
+    height: 414px;
+    margin: 0 auto;
+
+    padding-top: 100px;
+}
+
+.body ul .six .siZhangTu li {
+    float: left;
+
+}
+
+.body ul .six .siZhangTu li + li {
+    margin-left: 5px;
+}
+
+.body ul .six p {
+    color: #000;
+    text-align: center;
+    padding-top: 50px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.body ul .six .wenZi {
+    margin: 0 auto;
+    width: 1230px;
+    height: 30px;
+}
+
+.body ul .six li {
+    float: left;
+}
+
+.body ul .six li a {
+    font-size: 25px;
+    color: blue;
+}
+
+.body ul .six li a:hover {
+    color: red;
+}
+
+.body ul .six .wenZi li {
+    margin-left: 100px;
+}
+
+.body ul .six .wenZi li:nth-child(2) {
+    margin-left: 190px;
+}
+
+.body ul .six .wenZi li:nth-child(3) {
+    margin-left: 180px;
+}
+
+.body ul .six .wenZi li:nth-child(4) {
+    margin-left: 190px;
+}
+
+/*-----------------第七张图片----------------*/
+
+.body ul .seven {
+    background: url("images/13.jpg");
+    height: 768px;
+    width: 1366px;
+}
+
+.body ul .seven .neiRong .dengNi {
+    margin: 0 auto;
+    padding-top: 58px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 23px;
+    width: 220px;
+    color: white;
+    border-bottom: 2px solid red;
+}
+
+.body ul .seven .neiRong .ruZhu {
+    width: 380px;
+    margin: 0 auto;
+    line-height: 20px;
+    font-size: 20px;
+    color: #ccc;
+    margin-top: 29px;
+    margin-bottom: 54px;
+}
+
+.body ul .seven .neiRong .gunDong {
+    width: 1201px;
+    height: 215px;
+    /*background-color: red;*/
+    margin: 0 auto;
+    overflow: hidden;
+
+}
+
+.body ul .seven .neiRong .gunDong li {
+    float: left;
+}
+
+.body ul .seven .neiRong .gunDong li + li {
+    margin-left: 40px;
+}
+
+.body ul .seven .neiRong .gunDong ul {
+    /* 给宽度的目的是为了让ul把所有的图片在同一行显示 */
+    width: 2402px;
+    animation: gd 5s infinite linear;
+}
+
+/* 制定动画 */
+@keyframes gd {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-1201px);
+    }
+}
+
+/* 鼠标放到div上时，暂停ul的运动 */
+.body ul .seven .neiRong .gunDong:hover ul {
+    animation-play-state: paused;
+    cursor: pointer;
+}
+
+.body ul .seven .neiRong p {
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    height: 55px;
+    font-weight: bold;
+    line-height: 55px;
+    text-align: center;
+    color: #000;
+    font-size: 40px;
+}
+
+.body ul .seven .neiRong .jiaRu {
+    margin: 0 auto;
+    width: 173px;
+    height: 55px;
+    border: 2px solid #ea524e;
+    line-height: 55px;
+    text-align: center;
+
+    font-size: 20px;
+}
+
+.body ul .seven .neiRong .jiaRu a {
+    color: #ea524e;
+}
+
+.body ul .seven .neiRong .jiaRu a:hover {
+    color: red;
+}
+
+/*右侧按钮*/
+ol {
+    position: fixed;
+    top: 160px;
+    right: 25px;
+
+}
+
+ol li {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #000;
+    margin-top: -1px;
+    cursor: pointer;
+    /*border-radius: 50%;*/
+    margin-top: 20px;
+    background-color: #CCCCCC;
+    font-size: 12px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.body #ollist li.current {
+    background: red;
+}
+
+.body #ollist .huoJian {
+    width: 40px;
+    height: 40px;
+    background: url("images/64.gif");
+    position: fixed;
+    right: 20px;
+    bottom: 40px;
+    /*background-color: #2979c7;*/
+}
+
+/*............................主体结束......................................................*/
+
+/*..........................个人中心..............................................*/
+
+.geRen {
+    margin: 0 auto;
+    height: 301px;
+    width: 538px;
+    background-color: #fafafa;
+    margin-top: 122px;
+    border: 1px solid #ccc;
+}
+
+p {
+    width: 538px;
+    height: 26px;
+    font-size: 26px;
+    margin: 0 auto;
+    margin-bottom: 22px;
+    text-align: center;
+    margin-top: 77px;
+    font-weight: bold;
+}
+
+.geRen .zhuCe {
+    width: 299px;
+    height: 251px;
+    float: left;
+    margin-top: 41px;
+}
+
+.geRen .zhuCe img {
+    margin-left: 40px;
+}
+
+.geRen .zhuCe .xia .shouJi {
+    margin: 0 auto;
+    width: 225px;
+    height: 29px;
+    background-color: #2979c7;
+    text-align: center;
+    line-height: 29px;
+    border-radius: 10px;
+    margin-top: 22px;
+}
+
+.geRen .zhuCe .xia .dl {
+    margin: 0 auto;
+    width: 225px;
+    height: 29px;
+    background-color: #2979c7;
+    text-align: center;
+    line-height: 29px;
+    border-radius: 10px;
+    margin-top: 12px;
+}
+
+.geRen .zhuCe .xia .shouJi a {
+    color: #fff;
+}
+
+.geRen .zhuCe .xia .dl a {
+    color: #fff;
+}
+
+.geRen .weiXin {
+    width: 239px;
+    height: 251px;
+    /*background-color: blue;*/
+    float: right;
+    margin-top: 41px;
+}
+
+.geRen .weiXin ul li {
+    /*width: 41px;*/
+    height: 41px;
+    line-height: 41px;
+
+}
+
+.geRen .weiXin ul li a {
+    margin-left: 53px;
+}
+
+.geRen .weiXin ul li a:hover {
+    text-decoration: underline;
+}
+
+.geRen .weiXin ul li + li {
+    margin-top: 15px;
+}
+
+.geRen .weiXin ul li:first-child {
+    background: url(images/46.jpg) left center no-repeat;
+    padding-right: 12px;
+}
+
+.geRen .weiXin ul li:nth-child(2) {
+    background: url(images/47.jpg) left center no-repeat;
+    padding-right: 12px;
+}
+
+.geRen .weiXin ul li:nth-child(3) {
+    background: url(images/48.jpg) left center no-repeat;
+    padding-right: 12px;
+}
+
+.geRen .weiXin ul li:last-child {
+    background: url(images/49.jpg) left center no-repeat;
+    padding-right: 12px;
+}
+
+/*..........................常见问题....................................*/
+.wenTi {
+    width: 1366px;
+    height: 1985px;
+    background: url("images/51.png");
+}
+
+.wenTi .yy {
+    width: 200px;
+    height: 60px;
+    background-color: #242424;
+    position: fixed;
+    left: 80px;
+    line-height: 60px;
+    text-align: center;
+    font-size: 35px;
+}
+
+.wenTi .huoJian {
+    width: 40px;
+    height: 40px;
+    background: url("images/64.gif");
+    position: fixed;
+    right: 20px;
+    bottom: 70px;
+    /*background-color: #2979c7;*/
+}
+
+/*............................分 享.............................*/
+.fenXiang {
+    height: 300px;
+    width: 215px;
+    background-color: white;
+    position: fixed;
+    top: 100px;
+    left: -217px;
+    border: 1px solid #ccc;
+
+}
+
+.fenXiang span {
+    width: 30px;
+    height: 100px;
+    line-height: 35px;
+    text-align: center;
+    left: 215px;
+    top: 100px;
+    position: absolute;
+    background-color: yellow;
+    color: #666;
+    font-weight: bold;
+}
+
+.fenXiang div:nth-child(2) {
+    width: 20px;
+    height: 246px;
+    background: url("images/60.jpg");
+}
+
+.fenXiang div:nth-child(3) {
+    width: 88px;
+    height: 246px;
+}
+
+.fenXiang div:nth-child(4) {
+    width: 23px;
+    height: 246px;
+    background: url("images/62.jpg");
+}
+
+.fenXiang div:last-child {
+    width: 84px;
+    height: 246px;
+}
+
+.fenXiang div {
+    float: left;
+    margin-top: 27px;
+}
+
+.fenXiang ul li + li {
+    margin-top: 11px;
+}
+
+.fenXiang ul li a:hover {
+    text-decoration: underline;
+}
+
+/*.....................................................*/

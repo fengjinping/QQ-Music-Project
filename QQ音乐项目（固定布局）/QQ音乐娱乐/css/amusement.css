@@ -1,0 +1,859 @@
+/*--树叶飘落--*/
+.falling-leaves {
+    top:130px;
+    position: absolute;
+    width: 940px;
+    height: 550px;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.leaf-scene {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.leaf-scene div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 47px;
+    height: 17px;
+    background: url(../images/sy.png) no-repeat;
+    background-size: 100%;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-backface-visibility: visible;
+    backface-visibility: visible;
+}
+
+/*--------top 头部导航 start---------*/
+#top {
+    height: 170px;
+}
+
+#header .container {
+    border-bottom: 1px solid #f2f2f2;
+    height: 90px;
+
+}
+
+#header .container > a {
+    float: left;
+    width: 170px;
+    margin: 22px 0;
+    height: 46px;
+    display: inline-block;
+    margin-right: 40px;
+}
+
+#header .container a:hover {
+    color: #31c27c;
+}
+
+#header .container ul {
+    display: inline-block;
+}
+
+#header .container ul li:first-child {
+    background-color: #31c27c;
+}
+
+#header .container ul li:first-child a {
+    color: #ffffff;
+}
+
+#header .container li {
+    display: inline-block;
+    height: 90px;
+    padding: 0 18px;
+    font-size: 18px;
+    line-height: 90px;
+}
+
+#header .container .ipt {
+    width: 218px;
+    height: 36px;
+    border: 1px solid #c9c9c9;
+    margin-left: 16px;
+}
+
+#header .container span {
+    font-size: 16px;
+    margin: 0 20px;
+}
+
+#header .container .btn1 {
+    width: 109px;
+    height: 36px;
+    background-color: #32c27c;
+    color: #fff;
+    font-size: 14px;
+    border: 1px solid #32c27c;
+    margin-right: 10px;
+
+}
+
+#header .container .btn2 {
+    width: 83px;
+    height: 36px;
+    border: 1px solid #c9c9c9;
+    font-size: 14px;
+}
+
+#nav .container {
+    height: 51px;
+    /*background-color: red;*/
+}
+
+#nav .container ul {
+    margin-left: 230px;
+}
+
+#nav .container ul li {
+    font-size: 15px;
+    margin-right: 47px;
+    line-height: 51px;
+    float: left;
+}
+
+#nav .container ul li:first-child a {
+    color: #31c27c;
+}
+
+#nav .container ul a:hover {
+    color: #31c27c;
+}
+
+/*--------top 头部导航 end---------*/
+
+/*-----------------电梯按钮 start--------------*/
+#elevator {
+    width: 200px;
+    left: 10px;
+    position: fixed;
+    display: none;
+    z-index: 8;
+}
+
+#elevator span {
+    display: inline-block;
+}
+
+#elevator .eleDot {
+    position: absolute;
+    top: 140px;
+    left: 5px;
+}
+
+#elevator .eleDot li {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-bottom: 25px;
+    /*margin-right: 30px;*/
+}
+
+#elevator .eletitle {
+    position: absolute;
+    top: 137px;
+    left: 20px;
+    color: #000;
+    font-size: 5px;
+}
+
+#elevator .eletitle span {
+    padding-left: 7px;
+    line-height: 16px;
+}
+
+#elevator .eletitle li {
+    height: 16px;
+    width: 70px;
+    background: blue;
+    border-radius: 10px;
+    margin-bottom: 19px;
+    display: none;
+}
+
+/*-----------------电梯按钮 end--------------*/
+
+/*--------banner 横幅 start---------*/
+#banner {
+    height: 430px;
+    margin-top: 25px;
+}
+
+/*--banner 左侧轮播图----*/
+#banner_left {
+    float: left;
+    position: relative;
+    height: 430px;
+    width: 840px;
+    overflow: hidden;
+    -webkit-perspective: 500px;
+}
+
+.banner_left_pic .maoni p {
+    width: 168px;
+    height: 86px;
+    background-color: pink;
+    position: absolute;
+    font-size: 40px;
+    background: url("../images/banner11.jpg") no-repeat;
+    transition: all 1s ease 0s;
+}
+
+.banner_left_pic .fei .maoni p {
+    opacity: 0;
+}
+
+#banner .banner_left_pic img {
+    height: 430px;
+    width: 840px;
+}
+
+/*#banner .banner_left_pic {*/
+/*width: 1000%;*/
+/*}*/
+
+/*#banner .banner_left_pic li {*/
+/*float: left;*/
+/*}*/
+
+#banner .banner_left_lis {
+    position: absolute;
+    bottom: 15px;
+    left: 675px;
+
+}
+
+#banner .banner_left_lis li {
+    float: left;
+    width: 20px;
+    height: 8px;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+#banner_left .banner_btn {
+    position: absolute;
+}
+
+/*--banner 右侧新闻手风琴----*/
+#banner_right {
+    float: right;
+    width: 330px;
+    height: 430px;
+}
+
+#banner_right img {
+    width: 330px;
+    height: 180px;
+    border-radius: 0 0 10px 10px;
+}
+
+#banner_right ul li:first-child {
+    background: #dddddd;
+}
+
+#banner_right ul li {
+    float: left;
+}
+
+#banner_right span {
+    color: #333;
+    font-size: 15px;
+    display: inline-block;
+    height: 41px;
+    width: 330px;
+    line-height: 41px;
+    border-bottom: 1px dotted #cccccc;
+}
+
+#banner_right span:hover {
+    color: #ff6666;
+}
+
+/*--------banner 横幅 end---------*/
+
+/*--------main 主体 start---------*/
+#main {
+    /*height: 3000px;*/
+    /*background: pink;*/
+    margin-top: 50px;
+}
+
+/*-main 追星必备--*/
+#idolator .fl li {
+    float: left;
+    margin-right: 20px;
+}
+
+#idolator .fl li img {
+    border-radius: 15px 15px 0 0;
+}
+
+#idolator .fl li p {
+    background: rgba(0, 0, 0, 0.1);
+    height: 32px;
+    text-align: center;
+    line-height: 32px;
+    border-radius: 0 0 15px 15px;
+}
+
+#idolator .fr img {
+    border-radius: 10px;
+}
+
+/*main 现场直播live*/
+#main_live {
+    margin-top: 50px;
+}
+
+#main_live .live_title {
+    float: left;
+}
+
+#main_live .live_title img {
+    width: 470px;
+    height: 323px;
+}
+
+#main_live .live_title h4 {
+    color: #333333;
+    font-size: 16px;
+    font-weight: normal;
+    height: 43px;
+    line-height: 43px;
+}
+
+#main_live .live_title p {
+    font-size: 14px;
+    color: #a4a4a4;
+    /*background: #000;*/
+}
+
+#main_live .live_conent {
+    float: right;
+    width: 720px;
+}
+
+#main_live .live_conent li {
+    float: left;
+    margin-left: 20px;
+    margin-bottom: 22px;
+    overflow: hidden;
+}
+
+#main_live .live_conent li > div {
+    background: #000000;
+    height: 124px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+#main_live .live_conent li img {
+    width: 220px;
+    height: 124px;
+    opacity: 0.4;
+
+}
+
+#main_live .live_conent li h5 {
+    fond-size: 12px;
+    color: #333333;
+    margin-top: 12px;
+    height: 28px;
+    line-height: 28px;
+}
+
+#main_live .live_conent li p {
+    color: #a4a4a4;
+    font-size: 10px;
+    /*background: #000;*/
+}
+
+/*---高清美图---*/
+#main_pretty {
+    margin-top: 30px;
+}
+
+#main_pretty li {
+    float: left;
+}
+
+#main_pretty li + li {
+    margin-left: 15px;
+}
+
+#main_pretty .pretty_bottom {
+    margin-top: 15px;
+}
+
+#main_pretty .pretty_pic1 {
+    position: relative;
+    overflow: hidden;
+}
+
+#main_pretty .pretty_pic1 span {
+    position: absolute;
+    color: #fff;
+    left:15px;
+    bottom: -30px;
+    opacity: 0;
+    display: inline-block;
+    background: rgba(0,0,0,0.4);
+    border-radius: 5px 5px 0 0;
+    font-size: 14px;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 6px 0 6px ;
+}
+
+#main_pretty .pretty_pic2 {
+    position: relative;
+    display: none;
+    overflow: hidden;
+}
+
+#main_pretty .pretty_pic2 > span {
+    position: absolute;
+    color: #fff;
+    left:15px;
+    bottom: 0px;
+    /*opacity: 0;*/
+    display: inline-block;
+    background: rgba(0,0,0,0.4);
+    border-radius: 5px 5px 0 0;
+    font-size: 14px;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 6px 0 6px ;
+}
+
+/*--娱乐头条--*/
+#headline {
+    margin-top: 60px;
+}
+
+/*翻书效果动画 start*/
+#box {
+    overflow: hidden;
+}
+#box .pag1 {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform-style: preserve-3d;
+    transistion: 1s all ease;
+    z-index: 2;
+    transform-origin: left center;
+}
+
+#box .pag1 span {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.front {
+    background: url(../images/headline10.jpg) no-repeat right top;
+    transform: translateZ(1.1px);
+}
+
+.back {
+    background: url(../images/headline11.jpg) no-repeat left top;
+    transform: translateZ(-1.1px) scale(-1, 1);
+    opacity: 0;
+}
+
+.pag2 {
+    width: 50%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    background: url(../images/headline11.jpg) no-repeat right top;
+    z-index: 1;
+    display: none;
+}
+
+/*翻书效果动画 end*/
+
+#headline .headline_pic {
+    position: relative;
+    width: 318px;
+    height: 410px;
+}
+
+#headline .headline_pic h4 {
+    font-size: 16px;
+    color: #fff;
+}
+
+#headline .headline_pic p {
+    color: #ccc;
+    font-size: 14px;
+}
+
+#headline .headline_pic > div {
+    position: absolute;
+    left: 15px;
+    bottom: 10px;
+}
+#headline .headline_news {
+    background: rgba(255,255,255,0.6);
+}
+#headline .headline_news li {
+    padding: 12px 0;
+    margin-left: 18px;
+    border-bottom: 1px solid #ccc;
+}
+#headline .headline_news h3:hover{
+    color: #ff6666;
+}
+#headline .headline_news p:hover{
+    color: #ff6666;
+}
+#headline .headline_news h3 {
+    height: 35px;
+    font-weight: normal;
+    font-size: 20px;
+    color: #000;
+}
+
+#headline .headline_news p {
+    color: #8b8b8b;
+    font-size: 15px;
+}
+
+#headline .headline_bottom {
+    margin-top: 36px;
+}
+
+#headline .headline_movie div + div {
+    margin-top: 30px;
+}
+
+#headline .movie_lis {
+    color: #8b8b8b;
+    position: relative;
+    height: 258px;
+    width: 330px;
+}
+
+#headline .headline_rig img {
+    height: 200px;
+    width: 330px;
+    border-radius: 10px 10px 0 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#headline .headline_rig p {
+    width: 330px;
+    height: 58px;
+    background-color: #ccc;
+    border-radius: 0 0 10px 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+/*--时装--*/
+#star {
+    margin-top: 60px;
+}
+
+#star .star_rotate {
+    width: 840px;
+    height: 525px;
+    position: relative;
+    background: url("../images/showbackground.jpg") no-repeat 0 0px;
+    background-size: 840px 615px;
+
+}
+#btn{
+    width:80px;
+    height: 40px;
+    position: absolute;
+    font-size: 18px;
+    font-weight: bold;
+    bottom: 60px;
+    left: 365px;
+    background: #31c27c;
+    color: #353535;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 20px;
+    z-index: 8;
+}
+#star .star_ad {
+    width: 330px;
+}
+
+#star .star_lis li {
+    position: absolute;
+}
+
+#star .star_lis li img {
+    width: 250px;
+}
+
+#star .starAdTop {
+    position: relative;
+    height: 430px;
+}
+
+#star .starAdTop li {
+    position: absolute;
+}
+
+#star .starAdTop li img {
+    width: 260px;
+}
+
+#star .starAdBottom li {
+    float: left;
+    border: 2px solid black;
+}
+
+#star .starAdBottom li img {
+    width: 61px;
+}
+
+/*--------main 主体 end---------*/
+
+/*--------foot 底部 start---------*/
+#footer {
+    color: #999;
+    margin-top: 20px;
+    /*height: 590px;*/
+    background-color: #333333;
+}
+
+#footer a {
+    color: #999999;
+}
+
+#footer a:hover {
+    color: #31c27c;
+}
+
+/*---------------------footer---------top---*/
+#footer .container .ftTop {
+
+    font-size: 15px;
+    /*height: 457px;*/
+    height: 280px;
+    /*background-color: red;*/
+}
+
+#footer .container .ftTop > div {
+    float: left;
+    height: 280px;
+    /*background-color: green;*/
+}
+
+#footer .container .ftTop .ftTopl {
+    padding-left: 10px;
+    width: 390px;
+}
+
+#footer .container .ftTop .ftTopl p {
+
+    font-weight: 400;
+    padding: 80px 0 46px;
+}
+
+#footer .container .ftTop .ftTopl li {
+    text-align: center;
+    /*height: 81px;*/
+    width: 95px;
+    float: left;
+    margin-bottom: 10px;
+}
+
+#footer .container .ftTop .ftTopl li a {
+    display: block;
+
+}
+
+#footer .container .ftTop .ftTopl li a i {
+    display: block;
+    margin-top: 12px;
+}
+
+#footer .container .ftTop .ftTopl li a div {
+    width: 95px;
+    height: 48px;
+    background-color: green;
+}
+
+/*-------------------------------------------------------------底部精灵图-------------*/
+#footer .container .ftTop .ftTopl li:nth-child(1) a div {
+    width: 37px;
+    margin: 0 auto;
+    background: url("../images/footer.png") no-repeat;
+}
+
+#footer .container .ftTop .ftTopl li:nth-child(2) a div {
+    width: 46px;
+    margin: 0 auto;
+    background: url("../images/footer.png") no-repeat -92px 0;
+}
+
+#footer .container .ftTop .ftTopl li:nth-child(3) a div {
+    width: 37px;
+    margin: 0 auto;
+    background: url("../images/footer.png") no-repeat -190px 0;
+}
+
+#footer .container .ftTop .ftTopl li:nth-child(4) a div {
+    width: 34px;
+    margin: 0 auto;
+    background: url("../images/footer.png") no-repeat -279px 0;
+}
+
+#footer .container .ftTop .ftTopc li:nth-child(1) a div {
+    width: 41px;
+    margin: 0 auto;
+    background: url("../images/footer.png") no-repeat -370px 0;
+}
+
+#footer .container .ftTop .ftTopc li:nth-child(2) a div {
+    width: 37px;
+    margin: 0 auto;
+    background: url("../images/footer.png") no-repeat -464px 0;
+}
+
+#footer .container .ftTop .ftTopc li:nth-child(3) a div {
+    width: 40px;
+    margin: 0 auto;
+    background: url("../images/footer.png") no-repeat -563px 0;
+}
+
+/*---------------------------------------------------------------------底部精灵图:hover----------*/
+#footer .container .ftTop .ftTopl li:nth-child(1) a div:hover {
+    background: url("../images/footer.png") no-repeat 0 -49px;
+}
+
+#footer .container .ftTop .ftTopl li:nth-child(2) a div:hover {
+    background: url("../images/footer.png") no-repeat -92px -49px;
+}
+
+#footer .container .ftTop .ftTopl li:nth-child(3) a div:hover {
+    background: url("../images/footer.png") no-repeat -190px -49px;
+}
+
+#footer .container .ftTop .ftTopl li:nth-child(4) a div:hover {
+    background: url("../images/footer.png") no-repeat -279px -49px;
+}
+
+#footer .container .ftTop .ftTopc li:nth-child(1) a div:hover {
+    background: url("../images/footer.png") no-repeat -370px -49px;
+}
+
+#footer .container .ftTop .ftTopc li:nth-child(2) a div:hover {
+    background: url("../images/footer.png") no-repeat -464px -49px;
+}
+
+#footer .container .ftTop .ftTopc li:nth-child(3) a div:hover {
+    background: url("../images/footer.png") no-repeat -563px -49px;
+}
+
+/*------------------------------------------------底部精灵图:hover----end--------后期可用JS完善---*/
+#footer .container .ftTop .ftTopc {
+    padding-left: 70px;
+    width: 330px;
+}
+
+#footer .container .ftTop .ftTopr {
+    width: 310px;
+    padding-left: 90px;
+}
+
+#footer .container .ftTop .ftTopr p {
+
+    font-weight: 400;
+    padding: 80px 0 46px;
+}
+
+#footer .container .ftTop .ftTopr ul > li {
+    float: left;
+    margin-right: 20px;
+}
+
+#footer .container .ftTop .ftTopr ol li a {
+    display: block;
+    margin-bottom: 9px;
+}
+
+#footer .container .ftc {
+    border-bottom: 1px solid #353535;
+    height: 192px;
+    /*background-color: pink;*/
+    padding-left: 10px;
+    font-size: 15px;
+
+}
+
+#footer .container .ftc p {
+
+    padding: 45px 0 50px;
+}
+
+#footer .container .ftc ul li {
+    float: left;
+    margin: 0 30px 60px 0;
+}
+
+#footer .container .ftft {
+    height: 100px;
+}
+
+#footer .container .ftft .shang {
+    width: 800px;
+    margin: 30px 0 0 280px;
+    margin-left: 280px;
+}
+
+#footer .container .ftft .shang li {
+    padding: 0 5px;
+    float: left;
+}
+
+#footer .container .ftft .zhong {
+    width: 500px;
+    margin: 0 0 0 450px;
+}
+
+#footer .container .ftft .zhong li {
+    float: left;
+    padding: 5px;
+}
+
+#footer .container .ftft .xia {
+    margin-left: 485px;
+}
+
+#footer .container .ftft .xia li {
+
+    padding: 0 3px;
+    float: left;
+
+}
+
+/*--------foot 底部 end---------*/

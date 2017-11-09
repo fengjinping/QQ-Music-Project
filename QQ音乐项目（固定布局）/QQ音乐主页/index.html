@@ -1,0 +1,1260 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>QQ音乐</title>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/index.js"></script>
+
+</head>
+<body>
+<div class="fenXiang">
+    <span>分享到</span>
+    <div></div>
+    <div>
+        <ul>
+            <li><a href="#">一键分享</a></li>
+            <li><a href="#">新浪微博</a></li>
+            <li><a href="#">微信</a></li>
+            <li><a href="#">腾讯微博</a></li>
+            <li><a href="#">开心网</a></li>
+            <li><a href="#">百度贴吧</a></li>
+            <li><a href="#">百度新首页</a></li>
+            <li><a href="#">和讯微博</a></li>
+        </ul>
+    </div>
+    <div></div>
+    <div>
+        <ul>
+            <li><a href="#">QQ空间</a></li>
+            <li><a href="#">百度云收藏</a></li>
+            <li><a href="#">人人网</a></li>
+            <li><a href="#">百度相册</a></li>
+            <li><a href="#">腾讯朋友</a></li>
+            <li><a href="#">豆瓣网</a></li>
+            <li><a href="#">QQ好友</a></li>
+            <li><a href="#">百度中心</a></li>
+        </ul>
+    </div>
+</div>
+<script>
+    //1.获取元素
+    var fenXiang = document.getElementsByClassName("fenXiang")[0];
+    var span=document.getElementsByTagName("span")
+    //添加移入移出事件
+    fenXiang.onmouseover = function () {
+        animate(this, "left", 0)
+//        console.log(1);
+    }
+
+    fenXiang.onmouseout = function () {
+        animate(this, "left", -215)
+    }
+
+    function animate(tag, attr, target) {
+        clearInterval(tag.timer);
+        tag.timer = setInterval(function () {
+            //获取任意的样式属性
+//            使用短路操作
+            var leader = parseInt(getStyle(tag, attr)) || 0;
+            var step = ( target - leader ) / 10;
+            step = target > leader ? Math.ceil(step) : Math.floor(step);
+            leader = leader + step;
+            //设置给对应样式
+            tag.style[attr] = leader + "px";
+            if (leader == target) {
+                clearInterval(tag.timer);
+            }
+        },20);
+    }
+
+    //获取计算后的样式
+    function getStyle(tag, attr) {
+        return tag.currentStyle ? tag.currentStyle[attr] : getComputedStyle(tag, null)[attr];
+    }
+
+
+</script>
+<!--<div id="laoda">-->
+    <!----------------------------------------header--------start--->
+    <div id="header">
+        <div class="banxin">
+            <a href="#"><img src="images/logo.png" alt=""/></a>
+            <ul class="">
+                <li><a href="#">音乐馆</a></li>
+                <li><a href="https://y.qq.com/portal/profile.html">我的音乐</a></li>
+                <li><a href="javascript:;">客户端</a></li>
+                <li><a href="../QQ音乐人/音乐人首页.html">音乐人</a></li>
+                <li><a href="../QQ音乐娱乐/amusement.html">娱乐</a></li>
+            </ul>
+            <input type="text" class="ipt" placeholder="中国新歌声第二季"/>
+            <span><a href="#">登录</a></span>
+            <button class="btn1">开通绿钻豪华版</button>
+            <button class="btn2">开通付费包</button>
+        </div>
+    </div>
+    <!----------------------------------------header-------- end --->
+
+    <!---------------------------------------nva部分--------start--->
+    <div id="nav">
+        <div class="banxin">
+            <ul class="clearfix">
+                <li><a href="#">首页</a></li>
+                <li><a href="#">歌手</a></li>
+                <li><a href="#">专辑</a></li>
+                <li><a href="#">排行榜</a></li>
+                <li><a href="#">分类歌单</a></li>
+                <li><a href="../QQ音乐电台/index.html">电台</a></li>
+                <li><a href="#">MV</a></li>
+                <li><a href="#">数字专辑</a></li>
+            </ul>
+        </div>
+        <ol>
+            <li id="dingwei"><a href="#"></a></li>
+            <li></li>
+            <li></li>
+        </ol>
+    </div>
+    <!---------------------------------------nva部分-------- end --->
+
+    <!---------------------------------------banner--------start --->
+    <div id="banner">
+        <div class="banxin">
+            <i>新歌首发</i>
+            <ul class="nav clearfix">
+                <li><a href="#">内地</a></li>
+                <li><a href="#">港台</a></li>
+                <li><a href="#">欧美</a></li>
+                <li><a href="#">韩国</a></li>
+                <li><a href="#">日本</a></li>
+                <li><a href="#">全部&gt</a></li>
+            </ul>
+            <div class="xia">
+                <div class="keshi1">
+                    <ul class="clearfix">
+
+                        <!-- 新改的结构-->
+                        <li>
+                            <a href="">
+                                <img class="pic1" src="images/xg9.jpg" alt="i"/>
+                                <i class="bofang"></i>
+                                <em></em>
+                            </a>
+                            <div class="imgxia">
+                                <h4>
+                                    <a href="">我踮起脚尖就能看见来世</a>
+                                    <i><a href=""></a></i>
+                                </h4>
+                                <p><a href="">许飞</a></p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img class="pic1" src="images/xg0.jpg" alt="i"/>
+                                <i class="bofang"></i>
+                                <em></em>
+                            </a>
+                            <div class="imgxia">
+                                <h4>
+                                    <a href="">三角体</a>
+                                    <i><a href=""></a></i>
+                                </h4>
+                                <p><a href="">三珂</a></p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img class="pic1" src="images/xg5.jpg" alt="i"/>
+                                <i class="bofang"></i>
+                                <em></em>
+                            </a>
+                            <div class="imgxia">
+                                <h4>
+                                    <a href="">一分钟</a>
+                                    <i><a href=""></a></i>
+                                </h4>
+                                <p><a href="">方逸伦</a></p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img class="pic1" src="images/xg10.jpg" alt="i"/>
+                                <i class="bofang"></i>
+                                <em></em>
+                            </a>
+                            <div class="imgxia">
+                                <h4>
+                                    <a href="">Feeling Good</a>
+                                    <i><a href=""></a></i>
+                                </h4>
+                                <p><a href="">1931女子偶像组合</a></p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img class="pic1" src="images/xg3.jpg" alt="i"/>
+                                <i class="bofang"></i>
+                                <em></em>
+                            </a>
+                            <div class="imgxia">
+                                <h4>
+                                    <a href="">XXVII+</a>
+                                    <i><a href=""></a></i>
+                                </h4>
+                                <p><a href="">鹿晗</a></p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img class="pic1" src="images/xg7.jpg" alt="i"/>
+                                <i class="bofang"></i>
+                                <em></em>
+                            </a>
+                            <div class="imgxia">
+                                <h4>
+                                    <a href="">无聊人</a>
+                                    <i><a href=""></a></i>
+                                </h4>
+                                <p><a href="">华晨宇</a></p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img class="pic1" src="images/xg8.jpg" alt="i"/>
+                                <i class="bofang"></i>
+                                <em></em>
+                            </a>
+                            <div class="imgxia">
+                                <h4>
+                                    <a href="">一百种热爱</a>
+                                    <i><a href=""></a></i>
+                                </h4>
+                                <p><a href="">华语群星</a></p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img class="pic1" src="images/xg1.jpg" alt="i"/>
+                                <i class="bofang"></i>
+                                <em></em>
+                            </a>
+                            <div class="imgxia">
+                                <h4>
+                                    <a href="">GROUP</a>
+                                    <i><a href=""></a></i>
+                                </h4>
+                                <p><a href="">SNH48</a></p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img class="pic1" src="images/xg6.jpg" alt="i"/>
+                                <i class="bofang"></i>
+                                <em></em>
+                            </a>
+                            <div class="imgxia">
+                                <h4>
+                                    <a href="">我看着你的时候</a>
+                                    <i><a href=""></a></i>
+                                </h4>
+                                <p><a href="">李荣浩</a></p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img class="pic1" src="images/xg11.jpg" alt="i"/>
+                                <i class="bofang"></i>
+                                <em></em>
+                            </a>
+                            <div class="imgxia">
+                                <h4>
+                                    <a href="">配角而已</a>
+                                    <i><a href=""></a></i>
+                                </h4>
+                                <p><a href="">五月</a></p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img class="pic1" src="images/xg12.jpg" alt="i"/>
+                                <i class="bofang"></i>
+                                <em></em>
+                            </a>
+                            <div class="imgxia">
+                                <h4>
+                                    <a href="">Papper Zone</a>
+                                    <i><a href=""></a></i>
+                                </h4>
+                                <p><a href="">Y.A</a></p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img class="pic1" src="images/xg13.jpg" alt="i"/>
+                                <i class="bofang"></i>
+                                <em></em>
+                            </a>
+                            <div class="imgxia">
+                                <h4>
+                                    <a href="">圈套</a>
+                                    <i><a href=""></a></i>
+                                </h4>
+                                <p><a href="">郑康淳</a></p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img class="pic1" src="images/xg14.jpg" alt="i"/>
+                                <i class="bofang"></i>
+                                <em></em>
+                            </a>
+                            <div class="imgxia">
+                                <h4>
+                                    <a href="">逃离</a>
+                                    <i><a href=""></a></i>
+                                </h4>
+                                <p><a href="">三维鱼乐队</a></p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img class="pic1" src="images/xg15.jpg" alt="i"/>
+                                <i class="bofang"></i>
+                                <em></em>
+                            </a>
+                            <div class="imgxia">
+                                <h4>
+                                    <a href="">班长大人</a>
+                                    <i><a href=""></a></i>
+                                </h4>
+                                <p><a href="">李康熙</a></p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img class="pic1" src="images/banne1.jpg" alt="i"/>
+                                <i class="bofang"></i>
+                                <em></em>
+                            </a>
+                            <div class="imgxia">
+                                <h4>
+                                    <a href="">行者</a>
+                                    <i><a href=""></a></i>
+                                </h4>
+                                <p><a href="">郭旭</a></p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img class="pic1" src="images/xg16.jpg" alt="i"/>
+                                <i class="bofang"></i>
+                                <em></em>
+                            </a>
+                            <div class="imgxia">
+                                <h4>
+                                    <a href="">何为尽头</a>
+                                    <i><a href=""></a></i>
+                                </h4>
+                                <p><a href="">大主宰乐团</a></p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img class="pic1" src="images/xg9.jpg" alt="i"/>
+                                <i class="bofang"></i>
+                                <em></em>
+                            </a>
+                            <div class="imgxia">
+                                <h4>
+                                    <a href="">我踮起脚尖就能看见来世</a>
+                                    <i><a href=""></a></i>
+                                </h4>
+                                <p><a href="">许飞</a></p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img class="pic1" src="images/xg0.jpg" alt="i"/>
+                                <i class="bofang"></i>
+                                <em></em>
+                            </a>
+                            <div class="imgxia">
+                                <h4>
+                                    <a href="">三角体</a>
+                                    <i><a href=""></a></i>
+                                </h4>
+                                <p><a href="">三珂</a></p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img class="pic1" src="images/xg5.jpg" alt="i"/>
+                                <i class="bofang"></i>
+                                <em></em>
+                            </a>
+                            <div class="imgxia">
+                                <h4>
+                                    <a href="">一分钟</a>
+                                    <i><a href=""></a></i>
+                                </h4>
+                                <p><a href="">方逸伦</a></p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img class="pic1" src="images/xg10.jpg" alt="i"/>
+                                <i class="bofang"></i>
+                                <em></em>
+                            </a>
+                            <div class="imgxia">
+                                <h4>
+                                    <a href="">Feeling Good</a>
+                                    <i><a href=""></a></i>
+                                </h4>
+                                <p><a href="">1931女子偶像组合</a></p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="anniu">
+                    <span class="anniul">&lt</span>
+                    <span class="anniur">&gt</span>
+                </div>
+                <ol class="btn clearfix">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ol>
+            </div>
+        </div>
+    </div>
+    <!---------------------------------------banner--------  end --->
+
+    <!---------------------------------------main----------start --->
+    <div id="main">
+        <!-- -----------------精彩推荐-->
+        <div id="jingCai" class="jingCai">
+            <div class="banxin">
+                <div class="top">
+                    <i class="hx"></i>
+                    <i>精彩推荐</i>
+                    <i class="hx"></i>
+                </div>
+                <div class="foot">
+                    <div id="jcbox" class="box">
+                        <div class="keshi">
+                            <ul>
+                                <li><a href=""><img src="images/top0.jpg" alt=""/></a></li>
+                                <li><a href=""><img src="images/top1.jpg" alt=""/></a></li>
+                                <li><a href=""><img src="images/top2.jpg" alt=""/></a></li>
+                                <li><a href=""><img src="images/top3.jpg" alt=""/></a></li>
+                                <li><a href=""><img src="images/top4.jpg" alt=""/></a></li>
+                                <li><a href=""><img src="images/top5.jpg" alt=""/></a></li>
+                                <li><a href=""><img src="images/top6.jpg" alt=""/></a></li>
+                            </ul>
+                        </div>
+                        <div class="anniu">
+                            <span class="anniul">&lt</span>
+                            <span class="anniur">&gt</span>
+                        </div>
+                        <ol class="btn clearfix">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- -----------------排行榜-->
+        <div class="paiHang">
+            <div class="banxin">
+                <div class="top">
+                    <p>排行榜</p>
+                    <a href="#">全部&gt</a>
+                </div>
+                <ul class="pics">
+                    <li class="bjtp">
+                        <div class="shang">
+                            <p class="p1"><a href="#">巅峰榜</a></p>
+                            <p class="p2"><a href="#">流行指数</a></p>
+                            <i></i>
+                        </div>
+                        <ul class="xia">
+                            <li>
+                                <p class="p3"><a href="#">1 以父之名（Live）</a></p>
+                                <p class="p4"><a href="#">吴亦凡/红花会PG ONE</a></p>
+                            </li>
+                            <li>
+                                <p class="p3"><a href="#">2 不用去猜 (Live)</a></p>
+                                <p class="p4"><a href="#">Jony J</a></p>
+                            </li>
+                            <li>
+                                <p class="p3"><a href="#">3 我选择的路</a></p>
+                                <p class="p4"><a href="#">吴亦凡</a></p>
+                            </li>
+                            <li>
+                                <p class="p3"><a href="#">4 芬芳一生 (Live)</a></p>
+                                <p class="p4"><a href="#">刘惜君/毛不易</a></p>
+                            </li>
+
+                        </ul>
+                        <i></i>
+                    </li>
+                    <li class="bjtp">
+                        <div class="shang">
+                            <p class="p1"><a href="#">巅峰榜</a></p>
+                            <p class="p2"><a href="#">热歌</a></p>
+                            <i></i>
+                        </div>
+                        <ul class="xia">
+                            <li>
+                                <p class="p3"><a href="#">1 追梦赤子心</a></p>
+                                <p class="p4"><a href="#">鹿晗</a></p>
+                            </li>
+                            <li>
+                                <p class="p3"><a href="#">2 远走高飞 (独唱版)(Live)</a></p>
+                                <p class="p4"><a href="#">金志文</a></p>
+                            </li>
+                            <li>
+                                <p class="p3"><a href="#">3 带你去旅行</a></p>
+                                <p class="p4"><a href="#">校长</a></p>
+                            </li>
+                            <li>
+                                <p class="p3"><a href="#">4 春风吹</a></p>
+                                <p class="p4"><a href="#">方大同</a></p>
+                            </li>
+
+                        </ul>
+                        <i></i>
+                    </li>
+                    <li class="bjtp">
+                        <div class="shang">
+                            <p class="p1"><a href="#">巅峰榜</a></p>
+                            <p class="p2"><a href="#">新歌</a></p>
+                            <i></i>
+                        </div>
+                        <ul class="xia">
+                            <li>
+                                <p class="p3"><a href="#">1 我选择的路</a></p>
+                                <p class="p4"><a href="#">吴亦凡</a></p>
+                            </li>
+                            <li>
+                                <p class="p3"><a href="#">2 我的球场</a></p>
+                                <p class="p4"><a href="#">孙八一</a></p>
+                            </li>
+                            <li>
+                                <p class="p3"><a href="#">3 再遇不到你这样的人</a></p>
+                                <p class="p4"><a href="#">庄心妍</a></p>
+                            </li>
+                            <li>
+                                <p class="p3"><a href="#">4 Dusk Till Dawn</a></p>
+                                <p class="p4"><a href="#">ZAYN/Sia</a></p>
+                            </li>
+
+                        </ul>
+                        <i></i>
+                    </li>
+                    <li class="bjtp">
+                        <div class="shang">
+                            <p class="p1"><a href="#">巅峰榜</a></p>
+                            <p class="p2"><a href="#">欧美</a></p>
+                            <i></i>
+                        </div>
+                        <ul class="xia">
+                            <li>
+                                <p class="p3"><a href="#">1 Dusk Till Dawn</a></p>
+                                <p class="p4"><a href="#">ZAYN/Sia</a></p>
+                            </li>
+                            <li>
+                                <p class="p3"><a href="#">2 Move You(Live)</a></p>
+                                <p class="p4"><a href="#">Kelly Clarkson</a></p>
+                            </li>
+                            <li>
+                                <p class="p3"><a href="#">3 Too Good At Goodbyes</a></p>
+                                <p class="p4"><a href="#">Sam Smith</a></p>
+                            </li>
+                            <li>
+                                <p class="p3"><a href="#">4 ... Ready For It?</a></p>
+                                <p class="p4"><a href="#">Taylor Swift</a></p>
+                            </li>
+
+                        </ul>
+                        <i></i>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <!-- -----------------热门歌单-->
+        <div id="remen" class="jingCai reMen">
+            <div class="banxin">
+                <div class="top">
+                    <i class="hx"></i>
+                    <i>热门歌单</i>
+                    <i class="hx"></i>
+                </div>
+                <div class="xia">
+                    <div class="keshi2">
+                        <ul class="clearfix">
+                            <!-- -------------------------------li---->
+                            <li class="lis">
+                                <a href="">
+                                    <img class="pic2" src="images/remen1.jpg" alt="i"/>
+                                    <i class="bofangem"></i>
+                                    <em></em>
+                                </a>
+                                <div class="imgxia">
+                                    <h4>
+                                        <a href="">SM家族：打造韩流天团的梦工厂</a>
+                                        <i><a href=""></a></i>
+                                    </h4>
+                                    <p>播放量：79.9万</p>
+                                </div>
+                            </li>
+                            <li class="lis">
+                                <a href="">
+                                    <img class="pic2" src="images/remen1.jpg" alt="i"/>
+                                    <i class="bofangem"></i>
+                                    <em></em>
+                                </a>
+                                <div class="imgxia">
+                                    <h4>
+                                        <a href="">SM家族：打造韩流天团的梦工厂</a>
+                                        <i><a href=""></a></i>
+                                    </h4>
+                                    <p>播放量：79.9万</p>
+                                </div>
+                            </li>
+                            <li class="lis">
+                                <a href="">
+                                    <img class="pic2" src="images/remen1.jpg" alt="i"/>
+                                    <i class="bofangem"></i>
+                                    <em></em>
+                                </a>
+                                <div class="imgxia">
+                                    <h4>
+                                        <a href="">SM家族：打造韩流天团的梦工厂</a>
+                                        <i><a href=""></a></i>
+                                    </h4>
+                                    <p>播放量：79.9万</p>
+                                </div>
+                            </li>
+                            <li class="lis">
+                                <a href="">
+                                    <img class="pic2" src="images/remen1.jpg" alt="i"/>
+                                    <i class="bofangem"></i>
+                                    <em></em>
+                                </a>
+                                <div class="imgxia">
+                                    <h4>
+                                        <a href="">SM家族：打造韩流天团的梦工厂</a>
+                                        <i><a href=""></a></i>
+                                    </h4>
+                                    <p>播放量：79.9万</p>
+                                </div>
+                            </li>
+                            <li class="lis">
+                                <a href="">
+                                    <img class="pic2" src="images/remen1.jpg" alt="i"/>
+                                    <i class="bofangem"></i>
+                                    <em></em>
+                                </a>
+                                <div class="imgxia">
+                                    <h4>
+                                        <a href="">SM家族：打造韩流天团的梦工厂</a>
+                                        <i><a href=""></a></i>
+                                    </h4>
+                                    <p>播放量：79.9万</p>
+                                </div>
+                            </li>
+                            <li class="lis">
+                                <a href="">
+                                    <img class="pic2" src="images/remen1.jpg" alt="i"/>
+                                    <i class="bofangem"></i>
+                                    <em></em>
+                                </a>
+                                <div class="imgxia">
+                                    <h4>
+                                        <a href="">SM家族：打造韩流天团的梦工厂</a>
+                                        <i><a href=""></a></i>
+                                    </h4>
+                                    <p>播放量：79.9万</p>
+                                </div>
+                            </li>
+                            <li class="lis">
+                                <a href="">
+                                    <img class="pic2" src="images/remen1.jpg" alt="i"/>
+                                    <i class="bofangem"></i>
+                                    <em></em>
+                                </a>
+                                <div class="imgxia">
+                                    <h4>
+                                        <a href="">SM家族：打造韩流天团的梦工厂</a>
+                                        <i><a href=""></a></i>
+                                    </h4>
+                                    <p>播放量：79.9万</p>
+                                </div>
+                            </li>
+                            <li class="lis">
+                                <a href="">
+                                    <img class="pic2" src="images/remen1.jpg" alt="i"/>
+                                    <i class="bofangem"></i>
+                                    <em></em>
+                                </a>
+                                <div class="imgxia">
+                                    <h4>
+                                        <a href="">SM家族：打造韩流天团的梦工厂</a>
+                                        <i><a href=""></a></i>
+                                    </h4>
+                                    <p>播放量：79.9万</p>
+                                </div>
+                            </li>
+                            <li class="lis">
+                                <a href="">
+                                    <img class="pic2" src="images/remen1.jpg" alt="i"/>
+                                    <i class="bofangem"></i>
+                                    <em></em>
+                                </a>
+                                <div class="imgxia">
+                                    <h4>
+                                        <a href="">SM家族：打造韩流天团的梦工厂</a>
+                                        <i><a href=""></a></i>
+                                    </h4>
+                                    <p>播放量：79.9万</p>
+                                </div>
+                            </li>
+                            <li class="lis">
+                                <a href="">
+                                    <img class="pic2" src="images/remen1.jpg" alt="i"/>
+                                    <i class="bofangem"></i>
+                                    <em></em>
+                                </a>
+                                <div class="imgxia">
+                                    <h4>
+                                        <a href="">SM家族：打造韩流天团的梦工厂</a>
+                                        <i><a href=""></a></i>
+                                    </h4>
+                                    <p>播放量：79.9万</p>
+                                </div>
+                            </li>
+                            <li class="lis">
+                                <a href="">
+                                    <img class="pic2" src="images/remen1.jpg" alt="i"/>
+                                    <i class="bofangem"></i>
+                                    <em></em>
+                                </a>
+                                <div class="imgxia">
+                                    <h4>
+                                        <a href="">SM家族：打造韩流天团的梦工厂</a>
+                                        <i><a href=""></a></i>
+                                    </h4>
+                                    <p>播放量：79.9万</p>
+                                </div>
+                            </li>
+                            <li class="lis">
+                                <a href="">
+                                    <img class="pic2" src="images/remen1.jpg" alt="i"/>
+                                    <i class="bofangem"></i>
+                                    <em></em>
+                                </a>
+                                <div class="imgxia">
+                                    <h4>
+                                        <a href="">SM家族：打造韩流天团的梦工厂</a>
+                                        <i><a href=""></a></i>
+                                    </h4>
+                                    <p>播放量：79.9万</p>
+                                </div>
+                            </li>
+                            <li class="lis">
+                                <a href="">
+                                    <img class="pic2" src="images/remen1.jpg" alt="i"/>
+                                    <i class="bofangem"></i>
+                                    <em></em>
+                                </a>
+                                <div class="imgxia">
+                                    <h4>
+                                        <a href="">SM家族：打造韩流天团的梦工厂</a>
+                                        <i><a href=""></a></i>
+                                    </h4>
+                                    <p>播放量：79.9万</p>
+                                </div>
+                            </li>
+                            <li class="lis">
+                                <a href="">
+                                    <img class="pic2" src="images/remen1.jpg" alt="i"/>
+                                    <i></i>
+                                    <em></em>
+                                </a>
+                                <div class="imgxia">
+                                    <h4>
+                                        <a href="">SM家族：打造韩流天团的梦工厂</a>
+                                        <i><a href=""></a></i>
+                                    </h4>
+                                    <p>播放量：79.9万</p>
+                                </div>
+                            </li>
+                            <li class="lis">
+                                <a href="">
+                                    <img class="pic2" src="images/remen1.jpg" alt="i"/>
+                                    <i class="bofangem"></i>
+                                    <em></em>
+                                </a>
+                                <div class="imgxia">
+                                    <h4>
+                                        <a href="">SM家族：打造韩流天团的梦工厂</a>
+                                        <i><a href=""></a></i>
+                                    </h4>
+                                    <p>播放量：79.9万</p>
+                                </div>
+                            </li>
+                            <li class="lis">
+                                <a href="">
+                                    <img class="pic2" src="images/remen1.jpg" alt="i"/>
+                                    <i class="bofangem"></i>
+                                    <em></em>
+                                </a>
+                                <div class="imgxia">
+                                    <h4>
+                                        <a href="">SM家族：打造韩流天团的梦工厂</a>
+                                        <i><a href=""></a></i>
+                                    </h4>
+                                    <p>播放量：79.9万</p>
+                                </div>
+                            </li>
+                            <li class="lis">
+                                <a href="">
+                                    <img class="pic2" src="images/remen1.jpg" alt="i"/>
+                                    <i class="bofangem"></i>
+                                    <em></em>
+                                </a>
+                                <div class="imgxia">
+                                    <h4>
+                                        <a href="">SM家族：打造韩流天团的梦工厂</a>
+                                        <i><a href=""></a></i>
+                                    </h4>
+                                    <p>播放量：79.9万</p>
+                                </div>
+                            </li>
+                            <li class="lis">
+                                <a href="">
+                                    <img class="pic2" src="images/remen1.jpg" alt="i"/>
+                                    <i class="bofangem"></i>
+                                    <em></em>
+                                </a>
+                                <div class="imgxia">
+                                    <h4>
+                                        <a href="">SM家族：打造韩流天团的梦工厂</a>
+                                        <i><a href=""></a></i>
+                                    </h4>
+                                    <p>播放量：79.9万</p>
+                                </div>
+                            </li>
+                            <li class="lis">
+                                <a href="">
+                                    <img class="pic2" src="images/remen1.jpg" alt="i"/>
+                                    <i class="bofangem"></i>
+                                    <em></em>
+                                </a>
+                                <div class="imgxia">
+                                    <h4>
+                                        <a href="">SM家族：打造韩流天团的梦工厂</a>
+                                        <i><a href=""></a></i>
+                                    </h4>
+                                    <p>播放量：79.9万</p>
+                                </div>
+                            </li>
+                            <li class="lis">
+                                <a href="">
+                                    <img class="pic2" src="images/remen1.jpg" alt="i"/>
+                                    <i class="bofangem"></i>
+                                    <em></em>
+                                </a>
+                                <div class="imgxia">
+                                    <h4>
+                                        <a href="">SM家族：打造韩流天团的梦工厂</a>
+                                        <i><a href=""></a></i>
+                                    </h4>
+                                    <p>播放量：79.9万</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="anniu">
+                        <span class="anniul">&lt</span>
+                        <span class="anniur">&gt</span>
+                    </div>
+                    <ol class="btn clearfix">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ol>
+                </div>
+
+
+
+                <div class="regefoot"></div>
+            </div>
+        </div>
+
+
+        <!-- -----------------MV首播-->
+        <div class="jingCai MVsb">
+            <div class="banxin">
+                <div class="top">
+                    <i class="hx"></i>
+                    <i>MV首播</i>
+                    <i class="hx"></i>
+                </div>
+                <div class="nav">
+                    <ul>
+                        <li><a href="#">全部</a></li>
+                        <li><a href="#">内地</a></li>
+                        <li><a href="#">港台</a></li>
+                        <li><a href="#">欧美</a></li>
+                        <li><a href="#">韩国</a></li>
+                        <li><a href="#">日本</a></li>
+                        <li><a href="#">全部 &gt</a></li>
+                    </ul>
+
+                </div>
+                <div class="foot">
+                    <ul class="clearfix">
+                        <li>
+                            <a class="me" href="#"><img src="images/0.jpg" alt=""/><em></em></a>
+                            <a class="hehe" href="#">想成为你 (《英伦对决》电影推广曲)</a>
+                            <a href="#">黄子韬</a>
+                            <i>4.7万</i>
+
+                        </li>
+                        <li>
+                            <a class="me" href="#"><img src="images/0-1.jpg" alt=""/><em></em></a>
+                            <a class="hehe" href="#">我在诗里看到了你 (《钢铁飞龙之再见奥</a>
+                            <a href="#">大张伟</a>
+                            <i>7003</i>
+
+                        </li>
+                        <li>
+                            <a class="me" href="#"><img src="images/0-2.jpg" alt=""/><em></em></a>
+                            <a class="hehe" href="">青春不停跑 (《天天酷跑》四周年主题</a>
+                            <a href="">胡夏</a>
+                            <i>4.4万</i>
+
+                        </li>
+                        <li>
+                            <a class="me" href=""><img src="images/0-3.jpg" alt=""/><em></em></a>
+                            <a class="hehe" href="#">我就是个谜</a>
+                            <a href="#">许飞</a>
+                            <i>2.1万</i>
+
+                        </li>
+                        <li>
+                            <a class="me" href="#"><img src="images/0-4.jpg" alt=""/><em></em></a>
+                            <a class="hehe" href="#">小可爱</a>
+                            <a href="#">Coolbaby</a>
+                            <i>1719</i>
+
+                        </li>
+                        <li>
+                            <a class="me" href="#"><img src="images/0-5.jpg" alt=""/><em></em></a>
+                            <a class="hehe" href="#">学着习惯</a>
+                            <a href="#">潘柯夫</a>
+                            <i>1929</i>
+
+                        </li>
+                        <li>
+                            <a class="me" href="#"><img src="images/0-6.jpg" alt=""/><em></em></a>
+                            <a class="hehe" href="#">老男人</a>
+                            <a href="#">许飞</a>
+                            <i>1.4万</i>
+
+                        </li>
+                        <li>
+                            <a class="me" href="#"><img src="images/0-7.jpg" alt=""/><em></em></a>
+                            <a class="hehe" href="#">大叔也不错</a>
+                            <a href="#">杨坤</a>
+                            <i>32.1万</i>
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- MV附加-->
+        <div id="box">
+            <ul id="lis"></ul>
+        </div>
+
+    </div>
+    <!---------------------------------------main----------end-- --->
+
+    <!---------------------------------------footer--------start---->
+    <div id="footer">
+        <div class="banxin">
+            <div class="ftTop">
+                <div class="ftTopl">
+                    <p>下载QQ音乐客户端</p>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <div></div>
+                                <i>PC版</i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div></div>
+                                <i>Mac版</i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div></div>
+                                <i>Android版</i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div></div>
+                                <i>iPhone版</i>
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+                <div class="ftTopc ftTopl">
+                    <p>特色产品</p>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <div></div>
+                                <i>全民K歌</i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div></div>
+                                <i>Super Sound</i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div></div>
+                                <i>QPlay</i>
+                            </a>
+                        </li>
+                        <li>车载互联</li>
+                        <li>QQ演出</li>
+
+                    </ul>
+                </div>
+                <div class="ftTopr">
+                    <p>合作链接</p>
+                    <ul>
+                        <li class="fj">
+                            <ol>
+                                <li><a href="">CJ E&M</a></li>
+                                <li><a href="">最新版QQ</a></li>
+                                <li><a href="">QQ浏览器</a></li>
+                                <li><a href="">企鹅FM</a></li>
+                            </ol>
+                        </li>
+
+                        <li class="fj">
+                            <ol>
+                                <li><a href="">腾讯视频</a></li>
+                                <li><a href="">腾讯社交广告</a></li>
+                                <li><a href="">腾讯微云</a></li>
+                                <li><a href="">智能电视网</a></li>
+                            </ol>
+                        </li>
+                        <li class="fj">
+                            <ol>
+                                <li><a href="">手机QQ空间</a></li>
+                                <li><a href="">电脑管家</a></li>
+                                <li><a href="">腾讯云</a></li>
+                                <li><a href="">当贝市场</a></li>
+                            </ol>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="ftc">
+                <p>开放平台</p>
+                <ul>
+                    <li><a href="">腾讯音乐人平台</a></li>
+                    <li><a href="">音乐号认证</a></li>
+                    <li><a href="">上传视频</a></li>
+                    <li><a href="">上传音频</a></li>
+                </ul>
+            </div>
+            <div class="ftft">
+                <ol class="shang clearfix">
+                    <li><a href="">关于腾讯</a></li>
+                    <li>|</li>
+                    <li><a href="">About Tencent</a></li>
+                    <li>|</li>
+                    <li><a href="">服务条款</a></li>
+                    <li>|</li>
+                    <li><a href="">用户服务协议</a></li>
+                    <li>|</li>
+                    <li><a href="">隐私政策</a></li>
+                    <li>|</li>
+                    <li><a href="">广告服务</a></li>
+                    <li>|</li>
+                    <li><a href="">腾讯招聘</a></li>
+                    <li>|</li>
+                    <li><a href="">客服中心</a></li>
+                    <li>|</li>
+                    <li><a href="">网站导航</a></li>
+                </ol>
+                <ol class="zhong clearfix">
+                    <li>Copyright © 1998 - 2017 Tencent. </li>
+                    <li><a href=""> All Rights Reserved.</a></li>
+                </ol>
+                <ol class="xia clearfix">
+                    <li>腾讯公司 </li>
+                    <li><a href=""> 版权所有 </a></li>
+                    <li><a href=""> 腾讯网络文化经营许可证</a></li>
+                </ol>
+            </div>
+        </div>
+    </div>
+    <!---------------------------------------footer--------end  ---->
+<!--</div>-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    var box=document.getElementById("box");
+    var lis=document.getElementById("lis");
+
+    for (var i = 0; i < 136; i++) {
+        var li=document.createElement("li");
+//        var li=document.getElementsByTagName("li")
+        li.style.width="79px";
+        li.style.height="84px";
+
+        li.style.fontSize="50px" ;
+        li.style.textAlign="center";
+        li.style.color="#fff";
+        li.style.lineHeight="84px";
+
+
+        li.style.backgroundColor="rgba(0,0,0,0.7)";
+        li.style.float="left";
+        lis.appendChild(li);
+    }
+    var li=lis.children;
+
+    for (var i = 1; i <=8; i++) {
+    li[i*17-1].style.width="85px";
+
+    }
+
+
+    li[18].innerText="M";
+    li[19].innerText="V";
+
+    li[31].innerHTML="<a href='mv.html'>go</a>";
+    li[31].children[0].style.color="gold";
+
+    li[35].innerText="s";
+    li[36].innerText="h";
+    li[37].innerText="o";
+    li[38].innerText="w";
+
+
+
+
+    for (var i = 0; i < li.length; i++) {
+
+        li[i].onmouseover=function(){
+
+            this.style.backgroundColor="rgba(0,0,0,0)";
+            this.style.color="#000";
+        }
+
+
+//          移出事件写单这里后，最后的一个盒子也会执行移出事件
+//        li[i].onmouseout=function(){
+//
+//            var timer=setTimeout(function(){
+//                this.style.backgroundColor="rgba(0,0,0,0.7)";
+//                this.style.color="#fff";
+//            }.bind(this),1000);
+
+//        }
+    }
+
+
+    for (var i = 0; i < li.length; i++){
+        li[i].onmouseout=function(){
+
+            var timer=setTimeout(function(){
+                this.style.backgroundColor="rgba(0,0,0,0.7)";
+                this.style.color="#fff";
+            }.bind(this),1000);
+
+        }
+    }
+
+</script>
+
+</body>
+</html>

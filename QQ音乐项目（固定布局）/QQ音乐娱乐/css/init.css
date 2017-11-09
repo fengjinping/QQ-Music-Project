@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+#top,#banner,#elevator,#main,#footer{
+    z-index: 2;
+}
+em, i {
+    font-style: normal;
+}
+
+li {
+    list-style: none
+}
+
+img {
+    border: 0;
+    vertical-align: middle;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+button, a {
+    cursor: pointer
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    color: #333;
+}
+
+a:hover {
+    color: #ff6666;
+}
+
+button, input {
+    font-family: Microsoft YaHei, tahoma, arial, Hiragino Sans GB, \\5b8b\4f53, sans-serif
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    font: 12px/1.5 Microsoft YaHei, tahoma, arial, Hiragino Sans GB, \\5b8b\4f53, sans-serif;
+    color: #666;
+    /*background: url("../images/background.jpg") repeat;*/
+    /*background: #000000;*/
+}
+
+.hide, .none {
+    display: none
+}
+
+.clearfix:after {
+    visibility: hidden;
+    clear: both;
+    display: block;
+    content: ".";
+    height: 0
+}
+
+.clearfix {
+    *zoom: 1
+}
+
+/* 版心 */
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/*左右浮动*/
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+/*main中标题样式*/
+h2 {
+    font: bold 22px/24px “KaiTi_GB2312”;
+    color: #ff6666;
+    margin-bottom: 25px;
+    text-decoration: none;
+    padding-left: 10px;
+    height: 24px;
+    border-left: 3px solid #ff6666;
+}
+
+
+
+
+

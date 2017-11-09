@@ -1,0 +1,553 @@
+/*--------------------------header--------start---*/
+#header .banxin{
+    border-bottom: 1px solid #f2f2f2;
+    height: 90px;
+    /*background-color: red;*/
+}
+#header .banxin>a{
+    float: left;
+    width: 170px;
+    /*background-color: green;*/
+    margin: 22px 0;
+    height: 46px;
+    display: inline-block;
+    margin-right: 40px;
+}
+#header .banxin a:hover{
+    color: #31c27c;
+}
+
+#header .banxin ul{
+    display: inline-block;
+}
+#header .banxin ul li:first-child{
+    background-color:#31c27c;
+}
+#header .banxin ul li:first-child a{
+    color: #ffffff;
+}
+#header .banxin li{
+    display: inline-block;
+    height: 90px;
+    padding: 0 18px;
+    font-size: 18px;
+    line-height: 90px;
+}
+#header .banxin .ipt{
+    width: 218px;
+    height: 36px;
+    border: 1px solid #c9c9c9;
+    margin-left: 16px;
+}
+#header .banxin span{
+    font-size: 16px;
+    margin: 0 20px;
+}
+#header .banxin .btn1{
+    width: 109px;
+    height: 36px;
+    background-color: #32c27c;
+    color: #fff;
+    font-size: 14px;
+    border: 1px solid #32c27c;
+    margin-right: 10px;
+
+}
+#header .banxin .btn2{
+    width: 83px;
+    height: 36px;
+    border: 1px solid #c9c9c9;
+    font-size: 14px;
+}
+/*--------------------------header--------  end---*/
+
+
+/*--------------------------nav部分--------start---*/
+#nav .banxin{
+    height: 51px;
+}
+#nav .banxin ul{
+    margin-left: 230px;
+}
+#nav .banxin ul li{
+    font-size: 15px;
+    margin-right: 47px;
+    line-height: 51px;
+    float: left;
+}
+#nav .banxin ul li:nth-child(6) a{
+    color:#31c27c;
+}
+#nav .banxin ul a:hover{
+    color:#31c27c;
+}
+#nav ol{
+    width: 50px;
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+
+    z-index: 5;
+}
+
+#nav ol li{
+    opacity: 0.8;
+    height: 50px;
+    width: 50px;
+    margin-bottom: 2px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 10px;
+    color: #ffffff;
+}
+#nav ol li a{
+    width: 50px;
+    height: 50px;
+    display: block;
+}
+#nav ol li:nth-child(1){
+    background: url("../images/ji11.png") 0 -120px;
+    display: none;
+}
+#nav ol li:nth-child(1):hover{
+    background: url("../images/ji11.png") -50px -120px;
+}
+/*#nav ol li:nth-child(2):hover{*/
+/*background-color: #31c27c;*/
+/*}*/
+/*#nav ol li:nth-child(3):hover{*/
+/*background-color: #31c27c;*/
+/*}*/
+
+#nav ol li:nth-child(2){
+    background: url("../images/ji11.png") -100px -120px;
+}
+#nav ol li:nth-child(3){
+    background: url("../images/ji11.png") -150px -280px;
+}
+
+/*--------------------------nav部分--------  end---*/
+
+
+
+
+
+
+
+/*轮播图------*/
+/*大盒子*/
+
+#baiyechuang{
+    width: 1200px;
+    height: 450px;
+    margin: 15px auto 0;
+    position: relative;
+    cursor:pointer
+
+}
+#baiyechuang ul{
+    list-style: none;
+}
+#baiyechuang ul.tuul img{
+    width: 1200px;
+}
+
+#baiyechuang ul.tuul li{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#baiyechuang ul.tuul li.no1{
+    display: block;
+}
+#baiyechuang .maoni{
+    width: 1200px;
+    height: 450px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#baiyechuang .maoni div{
+    width: 0px;
+    height: 450px;
+    top: 0;
+    position: absolute;
+    background-image: none;
+
+}
+#baiyechuang .maoni .no0{
+    right: 1050px;
+
+    background-position: 0 0;
+}
+#baiyechuang .maoni .no1{
+    right: 900px;
+
+    background-position: -150px 0;
+}
+#baiyechuang .maoni .no2{
+    right: 750px;
+
+    background-position: -300px 0;
+}
+#baiyechuang .maoni .no3{
+    right: 600px;
+
+    background-position: -450px 0;
+}
+#baiyechuang .maoni .no4{
+    right: 450px;
+
+    background-position: -600px 0;
+}
+#baiyechuang .maoni .no5{
+    right: 300px;
+
+    background-position: -750px 0;
+}
+#baiyechuang .maoni .no6{
+    right: 150px;
+
+    background-position: -900px 0;
+}
+#baiyechuang .maoni .no7{
+    right: 0px;
+
+    background-position: -1050px 0;
+}
+
+
+
+
+
+/*---------------main--------*/
+#main{
+    position: relative;
+    background-color: honeydew;
+}
+/*左边*/
+#main .fl{
+    margin-top: 100px;
+    width: 113px;
+    background: url("../images/side.png") no-repeat;
+}
+#main .fl a{
+    display: block;
+    width: 93px;
+    height: 59px;
+    line-height: 59px;
+    font-size: 15px;
+    font-family: "微软雅黑";
+    padding-left: 65px;
+    position: relative;
+}
+
+#main .fl a:hover{
+    color:lawngreen;
+    font-size: 18px;
+}
+/*点击字体添加类名*/
+.current{
+    color: lawngreen;
+}
+.current:after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 37px;
+    overflow: hidden;
+    left: 0;
+    top: 50%;
+    /*background-color: #31c27c;*/
+    background-color: lawngreen;
+}
+/*滚动定位*/
+.fixed {
+    position: fixed;
+    top:0px;
+}
+
+/*main的右边标题*/
+#main .fr .h{
+    height: 20px;
+    padding:38px 38px 38px 0;
+}
+#main .fr .h h2{
+    line-height: 20px;
+    font-size: 15px;
+    color: #999;
+    position: relative;
+}
+#main .fr .h h2:after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    left: 43px;
+    right: 0;
+    top: 10px;
+    background-color: #ececec;
+}
+
+
+/*main的图片*/
+#main .fr .item ul{
+    width: 995px;
+    height: 283px;
+    padding-bottom: 44px;
+
+}
+#main .fr .item ul li{
+    width: 25%;
+    height: 283px;
+    float: left;
+}
+/*图片*/
+#main .fr .item ul li img{
+    width: 100%;
+}
+
+#main .fr .item ul li .img{
+    width:224px;
+    height: 224px;
+    overflow: hidden;
+    position: relative;
+}
+#main .fr .item ul li .img a{
+    width:224px;
+    height: 224px;
+    display: block;
+}
+/*播放器图标*/
+#main .fr .item ul li .img a i{
+    display:none;
+    width: 70px;
+    height:70px;
+    background:url("../images/font3.png") no-repeat;
+    position: absolute;
+    top: 30%;
+    left: 30%;
+}
+
+#main .fr .item ul li .img:hover a i{
+    display:block;
+}
+
+
+/*介绍和播放量*/
+#main .fr .item ul li span{
+    display: inline-block;
+    width: 224px;
+    height: 23px;
+    margin-top: 15px;
+}
+#main .fr .item ul li span a{
+    font-size: 15px;
+    color: #000;
+}
+#main .fr .item ul li span a:hover{
+    color: lawngreen;
+}
+#main .fr .item ul li i{
+    display: block;
+    height: 22px;
+    width: 224px;
+}
+
+
+
+
+/*--------------------------footer---------start-----*/
+#footer{
+    color: #999;
+    /*height: 590px;*/
+    background-color: #333333;
+}
+#footer a{
+    color: #999999;
+}
+#footer a:hover{
+    color: #31c27c;
+}
+
+
+
+body{
+    position: relative;
+}
+
+
+
+/*---------------------footer---------top---*/
+#footer .banxin .ftTop{
+
+    font-size: 15px;
+    /*height: 457px;*/
+    height: 280px;
+    /*background-color: red;*/
+}
+#footer .banxin .ftTop>div{
+    float: left;
+    height: 280px;
+    /*background-color: green;*/
+}
+#footer .banxin .ftTop .ftTopl{
+    padding-left: 10px;
+    width: 390px;
+}
+
+#footer .banxin .ftTop .ftTopl p{
+
+    font-weight: 400;
+    padding: 80px 0 46px;
+}
+#footer .banxin .ftTop .ftTopl li{
+    text-align: center;
+    /*height: 81px;*/
+    width: 95px;
+    float: left;
+    margin-bottom: 10px;
+}
+#footer .banxin .ftTop .ftTopl li a{
+    display: block;
+
+}
+#footer .banxin .ftTop .ftTopl li a i{
+    display: block;
+    margin-top: 12px;
+}
+#footer .banxin .ftTop .ftTopl li a div{
+    width: 95px;
+    height: 48px;
+    background-color:green;
+}
+/*-------------------------------------------------------------底部精灵图-------------*/
+#footer .banxin .ftTop .ftTopl li:nth-child(1) a div{
+    width: 37px;
+    margin: 0 auto;
+    background: url("../images/footer.png") no-repeat;
+}
+#footer .banxin .ftTop .ftTopl li:nth-child(2) a div{
+    width: 46px;
+    margin: 0 auto;
+    background: url("../images/footer.png") no-repeat -92px 0;
+}
+#footer .banxin .ftTop .ftTopl li:nth-child(3) a div{
+    width: 37px;
+    margin: 0 auto;
+    background: url("../images/footer.png") no-repeat -190px 0;
+}
+#footer .banxin .ftTop .ftTopl li:nth-child(4) a div{
+    width: 34px;
+    margin: 0 auto;
+    background: url("../images/footer.png") no-repeat -279px 0;
+}
+#footer .banxin .ftTop .ftTopc li:nth-child(1) a div{
+    width: 41px;
+    margin: 0 auto;
+    background: url("../images/footer.png") no-repeat -370px 0;
+}
+#footer .banxin .ftTop .ftTopc li:nth-child(2) a div{
+    width: 37px;
+    margin: 0 auto;
+    background: url("../images/footer.png") no-repeat -464px 0;
+}
+#footer .banxin .ftTop .ftTopc li:nth-child(3) a div{
+    width: 40px;
+    margin: 0 auto;
+    background: url("../images/footer.png") no-repeat -563px 0;
+}
+/*---------------------------------------------------------------------底部精灵图:hover----------*/
+#footer .banxin .ftTop .ftTopl li:nth-child(1) a div:hover{
+    background: url("../images/footer.png") no-repeat 0 -49px;
+}
+#footer .banxin .ftTop .ftTopl li:nth-child(2) a div:hover{
+    background: url("../images/footer.png") no-repeat -92px -49px;
+}
+#footer .banxin .ftTop .ftTopl li:nth-child(3) a div:hover{
+    background: url("../images/footer.png") no-repeat -190px -49px;
+}
+#footer .banxin .ftTop .ftTopl li:nth-child(4) a div:hover{
+    background: url("../images/footer.png") no-repeat -279px -49px;
+}
+#footer .banxin .ftTop .ftTopc li:nth-child(1) a div:hover{
+    background: url("../images/footer.png") no-repeat -370px -49px;
+}
+#footer .banxin .ftTop .ftTopc li:nth-child(2) a div:hover{
+    background: url("../images/footer.png") no-repeat -464px -49px;
+}
+#footer .banxin .ftTop .ftTopc li:nth-child(3) a div:hover{
+    background: url("../images/footer.png") no-repeat -563px -49px;
+}
+/*------------------------------------------------底部精灵图:hover----end--------后期可用JS完善---*/
+#footer .banxin .ftTop .ftTopc{
+    padding-left: 70px;
+    width: 330px;
+}
+
+#footer .banxin .ftTop .ftTopr{
+    width: 310px;
+    padding-left: 90px;
+}
+#footer .banxin .ftTop .ftTopr p{
+
+    font-weight: 400;
+    padding: 80px 0 46px;
+}
+#footer .banxin .ftTop .ftTopr ul>li{
+    float: left;
+    margin-right: 20px;
+}
+#footer .banxin .ftTop .ftTopr ol li a{
+    display: block;
+    margin-bottom: 9px;
+}
+
+#footer .banxin .ftc{
+    border-bottom: 1px solid #353535;
+    height: 192px;
+    /*background-color: pink;*/
+    padding-left: 10px;
+    font-size: 15px;
+
+}
+#footer .banxin .ftc p{
+
+    padding: 45px 0 50px;
+}
+#footer .banxin .ftc ul li{
+    float: left;
+    margin: 0 30px 60px 0;
+}
+
+
+#footer .banxin .ftft{
+    height: 100px;
+}
+#footer .banxin .ftft .shang{
+    width: 800px;
+    margin: 30px 0 0 280px;
+    margin-left: 280px;
+}
+#footer .banxin .ftft .shang li{
+    padding: 0 5px;
+    float: left;
+}
+
+#footer .banxin .ftft .zhong{
+    width: 500px;
+    margin: 0 0 0 450px;
+}
+#footer .banxin .ftft .zhong li{
+    float: left;
+    padding: 5px ;
+}
+#footer .banxin .ftft .xia{
+    margin-left: 485px;
+}
+#footer .banxin .ftft .xia li{
+
+    padding: 0 3px;
+    float: left;
+
+
+}

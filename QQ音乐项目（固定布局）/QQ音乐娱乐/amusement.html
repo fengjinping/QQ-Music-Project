@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/amusement.css"/>
+    <link rel="stylesheet" href="css/init.css"/>
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/jquery.transit.js"></script>
+    <script src="js/amusement.js"></script>
+    <script></script>
+    <style>
+        #footer #hhh {
+            width: 30px;
+            height: 30px;
+            background: #ccc;
+            position: fixed;
+            right: 20px;
+            bottom: 30px;
+            text-align: center;
+            line-height: 30px;
+            color:black;
+        }
+    </style>
+
+
+</head>
+<body>
+<!--树叶飘落-->
+<div class="falling-leaves" style=""></div>
+<!-- ------------top 头部导航 start-------- -->
+<div id="top" class="clearfix">
+    <div id="header">
+        <div class="container">
+            <a href="../QQ音乐主页-郭/index.html"><img src="images/logo.png" alt=""/></a>
+            <ul class="">
+                <li><a href="#">音乐馆</a></li>
+                <li><a href="#">我的音乐</a></li>
+                <li><a href="#">客户端</a></li>
+                <li><a href="../CUI/音乐人首页.html">音乐人</a></li>
+                <li><a href="../QQ音乐主页-郭/index.html">娱乐</a></li>
+            </ul>
+            <input type="text" class="ipt" placeholder="中国新歌声第二季"/>
+            <span><a href="#">登录</a></span>
+            <button class="btn1">开通绿钻豪华版</button>
+            <button class="btn2">开通付费包</button>
+        </div>
+    </div>
+    <div id="nav">
+        <div class="container">
+            <ul class="clearfix">
+                <li><a href="#">首页</a></li>
+                <li><a href="#">歌手</a></li>
+                <li><a href="#">专辑</a></li>
+                <li><a href="#">排行榜</a></li>
+                <li><a href="#">分类歌单</a></li>
+                <li><a href="../QQ音乐-电台-程/index.html">电台</a></li>
+                <li><a href="#">MV</a></li>
+                <li><a href="#">数字专辑</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- ------------top 头部导航 end-------- -->
+
+<!-----------------电梯按钮 start-------------->
+<div id="elevator">
+    <ul class="eletitle">
+        <li><span>追星必备</span></li>
+        <li><span>现场Live</span></li>
+        <li><span>高清美图</span></li>
+        <li><span>娱乐头条</span></li>
+        <li><span>时装Show</span></li>
+    </ul>
+    <ul class="eleDot">
+        <li><span></span></li>
+        <li><span></span></li>
+        <li><span></span></li>
+        <li><span></span></li>
+        <li><span></span></li>
+    </ul>
+
+</div>
+<!-----------------电梯按钮 end-------------->
+
+<!-- ------------banner 横幅 start-------- -->
+<div id="banner" class="container clearfix">
+    <!--banner 左侧轮播图-->
+    <div id="banner_left">
+        <div class="banner_left_pic clearfix">
+            <img src="images/banner11.jpg">
+            <!--<li><a href="#"><img src="images/banner12.jpg"><span></span></a></li>-->
+            <!--<li><a href="#"><img src="images/banner13.jpg"><span></span></a></li>-->
+            <!--<li><a href="#"><img src="images/banner14.jpg"><span></span></a></li>-->
+            <!--<li><a href="#"><img src="images/banner15.jpg"><span></span></a></li>-->
+        </div>
+        <ul class="banner_left_lis">
+            <li></li>
+        </ul>
+        <div class="banner_btn"><span class="banner_btnLef"></span><span class="banner_btnRig"></span></div>
+    </div>
+    <!--banner 右侧新闻手风琴-->
+    <div id="banner_right">
+        <ul>
+            <li><a href="#">
+                <span>鹿晗束发樱花演绎帅气贵公子</span>
+                <img src="images/banrig1.jpg"/></a></li>
+            <li><a href="#">
+                <span>崔雪莉诠释阳光沙滩美女</span>
+                <img src="images/banrig2.jpg" class="hide"/></a></li>
+            <li><a href="#">
+                <span>易烊千玺拍摄大片展现雅痞魅力</span>
+                <img src="images/banrig3.jpg" class="hide"/></a></li>
+            <li><a href="#">
+                <span>霍建华夫妇参加“芭莎明星慈善夜”</span>
+                <img src="images/banrig4.jpg" class="hide"/></a></li>
+            <li><a href="#">
+                <span>林俊杰再会库克</span>
+                <img src="images/banrig5.jpg" class="hide"/></a></li>
+            <li><a href="#">
+                <span>疑薛之谦发文:和李雨桐只是合作伙伴的关系</span>
+                <img src="images/banrig6.jpg" class="hide"/></a></li>
+        </ul>
+
+    </div>
+
+</div>
+<!-- ------------banner 横幅 end-------- -->
+
+
+<!-- ------------main 主体 start-------- -->
+<div id="main" class="container">
+    <!--main 追星必备-->
+    <div id="idolator" class="clearfix">
+        <h2>追星必备</h2>
+
+        <div>
+            <ul class="fl">
+                <li><img src="images/idolator01.gif" alt=""/>
+
+                    <p>官方DVD专区</p></li>
+                <li><img src="images/idolator02.jpg" alt=""/>
+
+                    <p>电影周边</p></li>
+                <li><img src="images/idolator03.png" alt=""/>
+
+                    <p>签名商品专区</p></li>
+                <li><img src="images/idolator04.png" alt=""/>
+
+                    <p>官方应援手灯专区</p></li>
+            </ul>
+            <div class="fr"><img src="images/idolatorrig.jpg" alt=""/></div>
+        </div>
+
+    </div>
+    <!--main 现场直播live-->
+    <div id="main_live">
+        <h2>现场Live</h2>
+
+        <div class="clearfix">
+            <div class="live_title">
+                <a href="#"><img src="images/mainlive.gif" alt=""/><h4>EXO最新《POWER》现场舞台</h4>
+
+                    <p>黑发少年美大爆发的金茶蛋！</p></a>
+            </div>
+            <ul class="live_conent clearfix">
+                <li>
+                    <div class="live_pic"><img src="images/liverig01.jpg" alt=""/></div>
+                    <h5>还我 - 台北演唱会</h5>
+
+                    <p>S.H.E</p></li>
+                <li>
+                    <div class="live_pic"><img src="images/liverig02.jpg" alt=""/></div>
+                    <h5>七年 - Thank You 演唱会</h5>
+
+                    <p>方力申 & 邓丽欣</p></a></li>
+                <li>
+                    <div class="live_pic"><img src="images/liverig03.jpg" alt=""/></div>
+                    <h5>Here with you - 人生巡演</h5>
+
+                    <p>钟汉良</p></li>
+                <li>
+                    <div class="live_pic"><img src="images/liverig04.jpg" alt=""/></div>
+                    <h5>小幸运 - 如果PLUS巡回演唱会</h5>
+
+                    <p>田馥甄</p></li>
+                <li>
+                    <div class="live_pic"><img src="images/liverig05.jpg" alt=""/></div>
+                    <h5>HONEYMOON- 现场版</h5>
+
+                    <p>B.A.P</p></li>
+                <li>
+                    <div class="live_pic"><img src="images/liverig06.jpg" alt=""/></div>
+                    <h5>打上花火 (Music Station)现场版</h5>
+
+                    <p>Dream Ami</p></li>
+            </ul>
+        </div>
+
+    </div>
+    <!--高清美图-->
+    <div id="main_pretty" class="clearfix">
+        <h2>高清美图</h2>
+        <ul class="clearfix">
+            <li>
+                <div class="pretty_top">
+                    <a href="#" class="pretty_pic1">
+                        <img src="images/mainpretty01.jpg"/>
+                        <span>杨业明：阳光帅气尽显少年范儿</span>
+                    </a>
+                    <a href="#" class="pretty_pic2">
+                        <img src="images/mainpretty11.jpg"/>
+                        <span>何润东暖男魅力戏里戏外撩醉少女心</span>
+                    </a>
+                </div>
+                <div class="pretty_bottom">
+                    <a href="#" class="pretty_pic1">
+                        <img src="images/mainpretty02.jpg"/>
+                        <span>王嘉尔：嘻哈少年释放性感魅力</span>
+                    </a>
+                    <a href="#" class="pretty_pic2">
+                        <img src="images/mainpretty12.jpg"/>
+                        <span>郭雪芙露香肩美腿 性感优雅不失清新</span>
+                    </a>
+
+                </div>
+            </li>
+            <li>
+                <div class="pretty_top">
+                    <a href="#" class="pretty_pic1">
+                        <img src="images/mainpretty03.jpg"/>
+                        <span>WINNER最新画报:复古运动的少年们</span>
+                    </a>
+                    <a href="#" class="pretty_pic2">
+                        <img src="images/mainpretty13.jpg"/>
+                        <span>刘昊然 青涩蜕变少年长成</span>
+                    </a>
+
+                </div>
+                <div class="pretty_bottom">
+                    <a href="#" class="pretty_pic1">
+                        <img src="images/mainpretty04.jpg"/>
+                        <span>蔡依林 绝美精灵女王驾到！</span>
+                    </a>
+                    <a href="#" class="pretty_pic2">
+                        <img src="images/mainpretty14.jpg"/>
+                        <span>张天爱再登封 复古红裙尽显优雅</span>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <div class="pretty_top">
+                    <a href="#" class="pretty_pic1">
+                        <img src="images/mainpretty05.jpg"/>
+                        <span>谭松韵与绿植私照 清爽短发恬淡可人</span>
+                    </a>
+                    <a href="#" class="pretty_pic2">
+                        <img src="images/mainpretty15.jpg"/>
+                        <span>任嘉伦玩酷BOY品味时尚质感生活</span>
+                    </a>
+                </div>
+                <div class="pretty_bottom">
+                    <a href="#" class="pretty_pic1">
+                        <img src="images/mainpretty06.jpg"/>
+                        <span>“花房姑娘”谢娜优雅文艺两不误</span>
+                    </a>
+                    <a href="#" class="pretty_pic2">
+                        <img src="images/mainpretty16.jpg"/>
+                        <span>王凯斩获首个男刊金九封面</span>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <div class="pretty_top">
+                    <a href="#" class="pretty_pic1">
+                        <img src="images/mainpretty07.png"/>
+                        <span>刘亦菲出道初期麻花辫少女感十足</span>
+                    </a>
+                    <a href="#" class="pretty_pic2">
+                        <img src="images/mainpretty17.jpg"/>
+                        <span>刘昊然 青涩蜕变少年长成</span>
+                    </a>
+                </div>
+                <div class="pretty_bottom">
+                    <a href="#" class="pretty_pic1">
+                        <img src="images/mainpretty08.jpg"/>
+                        <span>杨业明：阳光帅气尽显少年范儿</span>
+                    </a>
+                    <a href="#" class="pretty_pic2">
+                        <img src="images/mainpretty18.jpg"/>
+                        <span>WINNER宋旻浩叛逆不羁有范儿</span>
+                    </a>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <!--娱乐头条-->
+    <div id="headline" class="clearfix">
+        <div class="healine_lef fl">
+            <h2>娱乐头条</h2>
+
+            <div id="box" class="headline_top clearfix">
+                <div class="headline_pic fl pag1 clearfix">
+                    <span class="front"></span>
+                    <span class="back"></span>
+                    <!--<img src="images/headline01.jpg" alt=""/>-->
+                    <div>
+                        <h4>王嘉尔最新写真曝光</h4>
+
+                        <p>嘻哈少年释放性感魅力</p>
+                    </div>
+                </div>
+                <div class="pag2"></div>
+                <ul class="headline_news fl">
+                    <li><a href="#"><h3>BIGBANG太阳演唱会现场撞到话筒流鼻血 敬业完成表演</h3>
+
+                        <p>据在场粉丝描述，太阳磕到话筒后不但没有暂停，甚至还继续跳舞，被赞敬业</p></a></li>
+                    <li><a href="#"><h3>"苹果粉"林俊杰受邀参与全球盛事 化身资深科技达人</h3>
+
+                        <p>JJ提到：年底要发行酝酿2年的新专辑，希望自己也能把热忱带回到大家身边</p></a></li>
+                    <li><a href="#"><h3>因共同参与节目被翻往事 张韶涵发文回顾心境谈交心</h3>
+
+                        <p>近日张韶涵与范玮琪成为某音乐节目嘉宾，俩人渊源又被提起，引起网友讨论</p></a></li>
+                    <li><a href="#"><h3>朴有天与未婚妻婚礼再度延期 称婚前留时间回顾人生</h3>
+
+                        <p>二人当初计划9月10日举行婚礼，后推迟到20日，目前也没有公布最终时间</p></a></li>
+                    <li><a href="#"><h3>林心如关闭社交账号评论 因"周杰舌吻"风波质问网友</h3>
+
+                        <p>早期节目被翻出周杰回应，加上霍建华指镜头阻拍摄一事令林心如被网络攻击</p></a></li>
+                </ul>
+            </div>
+            <div class="headline_bottom">
+                <div><img src="images/headline02.jpg" alt=""/></div>
+            </div>
+        </div>
+        <div class=" headline_rig fr">
+            <h2>热播电影</h2>
+
+            <div class="headline_movie">
+                <div class="movie_lis"><img src="images/headline03.jpg" alt=""/>
+
+                    <p></p></div>
+                <div class="movie_lis"><img src="images/headline04.jpg" alt=""/>
+
+                    <p></p></div>
+            </div>
+
+        </div>
+    </div>
+
+    <!--时装show-->
+    <div id="star" class="clearfix">
+        <div class="star_sign fl">
+            <h2>时装Show</h2>
+
+            <div class="star_rotate">
+                <ul class="star_lis">
+                    <li><img src="images/starshow01.jpg" alt=""/></li>
+                    <li><img src="images/starshow02.jpg" alt=""/></li>
+                    <li><img src="images/starshow03.jpg" alt=""/></li>
+                    <li><img src="images/starshow04.jpg" alt=""/></li>
+                    <li><img src="images/starshow05.jpg" alt=""/></li>
+                    <li><img src="images/starshow06.jpg" alt=""/></li>
+                    <li><img src="images/starshow07.jpg" alt=""/></li>
+                    <li><img src="images/starshow08.jpg" alt=""/></li>
+
+                </ul>
+                <p id="btn">换肤</p>
+            </div>
+
+        </div>
+        <div class="star_ad fr">
+            <h2>明星照片</h2>
+
+            <div class="star_ad">
+                <div class="starAdTop">
+                    <ul>
+                        <li><img src="images/star01.png" alt=""/></li>
+                        <li><img src="images/star02.png" alt=""/></li>
+                        <li><img src="images/star03.png" alt=""/></li>
+                        <li><img src="images/star04.png" alt=""/></li>
+                        <li><img src="images/star05.png" alt=""/></li>
+                    </ul>
+                </div>
+                <div class="starAdBottom">
+                    <ul>
+                        <li><img src="images/star01.png" alt=""/></li>
+                        <li><img src="images/star02.png" alt=""/></li>
+                        <li><img src="images/star03.png" alt=""/></li>
+                        <li><img src="images/star04.png" alt=""/></li>
+                        <li><img src="images/star05.png" alt=""/></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+</div>
+<!-- ------------main 主体 end-------- -->
+
+
+<!-- ------------foot 底部 start-------- -->
+<div id="footer">
+    <div class="container">
+        <div class="ftTop">
+            <div class="ftTopl">
+                <p>下载QQ音乐客户端</p>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <div></div>
+                            <i>PC版</i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div></div>
+                            <i>Mac版</i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div></div>
+                            <i>Android版</i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div></div>
+                            <i>iPhone版</i>
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+            <div class="ftTopc ftTopl">
+                <p>特色产品</p>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <div></div>
+                            <i>全民K歌</i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div></div>
+                            <i>Super Sound</i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div></div>
+                            <i>QPlay</i>
+                        </a>
+                    </li>
+                    <li>车载互联</li>
+                    <li>QQ演出</li>
+
+                </ul>
+            </div>
+            <div class="ftTopr">
+                <p>合作链接</p>
+                <ul>
+                    <li class="fj">
+                        <ol>
+                            <li><a href="">CJ E&M</a></li>
+                            <li><a href="">最新版QQ</a></li>
+                            <li><a href="">QQ浏览器</a></li>
+                            <li><a href="">企鹅FM</a></li>
+                        </ol>
+                    </li>
+
+                    <li class="fj">
+                        <ol>
+                            <li><a href="">腾讯视频</a></li>
+                            <li><a href="">腾讯社交广告</a></li>
+                            <li><a href="">腾讯微云</a></li>
+                            <li><a href="">智能电视网</a></li>
+                        </ol>
+                    </li>
+                    <li class="fj">
+                        <ol>
+                            <li><a href="">手机QQ空间</a></li>
+                            <li><a href="">电脑管家</a></li>
+                            <li><a href="">腾讯云</a></li>
+                            <li><a href="">当贝市场</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="ftc">
+            <p>开放平台</p>
+            <ul>
+                <li><a href="">腾讯音乐人平台</a></li>
+                <li><a href="">音乐号认证</a></li>
+                <li><a href="">上传视频</a></li>
+                <li><a href="">上传音频</a></li>
+            </ul>
+        </div>
+        <div class="ftft">
+            <ol class="shang clearfix">
+                <li><a href="">关于腾讯</a></li>
+                <li>|</li>
+                <li><a href="">About Tencent</a></li>
+                <li>|</li>
+                <li><a href="">服务条款</a></li>
+                <li>|</li>
+                <li><a href="">用户服务协议</a></li>
+                <li>|</li>
+                <li><a href="">隐私政策</a></li>
+                <li>|</li>
+                <li><a href="">广告服务</a></li>
+                <li>|</li>
+                <li><a href="">腾讯招聘</a></li>
+                <li>|</li>
+                <li><a href="">客服中心</a></li>
+                <li>|</li>
+                <li><a href="">网站导航</a></li>
+            </ol>
+            <ol class="zhong clearfix">
+                <li>Copyright © 1998 - 2017 Tencent.</li>
+                <li><a href=""> All Rights Reserved.</a></li>
+            </ol>
+            <ol class="xia clearfix">
+                <li>腾讯公司</li>
+                <li><a href=""> 版权所有 </a></li>
+                <li><a href=""> 腾讯网络文化经营许可证</a></li>
+            </ol>
+        </div>
+    </div>
+    <a href="#"><div id="hhh">Top</div></a>
+</div>
+<!-- ------------foot 底部 end-------- -->
+
+</body>
+</html>

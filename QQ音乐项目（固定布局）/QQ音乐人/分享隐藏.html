@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>崔卫强</title>
+    <link rel="stylesheet" href="cssshouYe.css">
+
+</head>
+<body>
+<div class="fenXiang">
+    <span>分享到</span>
+    <div></div>
+    <div>
+        <ul>
+            <li><a href="#">一键分享</a></li>
+            <li><a href="#">新浪微博</a></li>
+            <li><a href="#">微信</a></li>
+            <li><a href="#">腾讯微博</a></li>
+            <li><a href="#">开心网</a></li>
+            <li><a href="#">百度贴吧</a></li>
+            <li><a href="#">百度新首页</a></li>
+            <li><a href="#">和讯微博</a></li>
+        </ul>
+    </div>
+    <div></div>
+    <div>
+        <ul>
+            <li><a href="#">QQ空间</a></li>
+            <li><a href="#">百度云收藏</a></li>
+            <li><a href="#">人人网</a></li>
+            <li><a href="#">百度相册</a></li>
+            <li><a href="#">腾讯朋友</a></li>
+            <li><a href="#">豆瓣网</a></li>
+            <li><a href="#">QQ好友</a></li>
+            <li><a href="#">百度中心</a></li>
+        </ul>
+    </div>
+</div>
+<script>
+    //1.获取元素
+    var fenXiang = document.getElementsByClassName("fenXiang")[0];
+    var span=document.getElementsByTagName("span")
+    //添加移入移出事件
+    fenXiang.onmouseover = function () {
+        animate(this, "left", 0)
+//        console.log(1);
+    }
+
+    fenXiang.onmouseout = function () {
+        animate(this, "left", -215)
+    }
+
+    function animate(tag, attr, target) {
+        clearInterval(tag.timer);
+        tag.timer = setInterval(function () {
+            //获取任意的样式属性
+//            使用短路操作
+            var leader = parseInt(getStyle(tag, attr)) || 0;
+            var step = ( target - leader ) / 10;
+            step = target > leader ? Math.ceil(step) : Math.floor(step);
+            leader = leader + step;
+            //设置给对应样式
+            tag.style[attr] = leader + "px";
+            if (leader == target) {
+                clearInterval(tag.timer);
+            }
+        },20);
+    }
+
+    //获取计算后的样式
+    function getStyle(tag, attr) {
+        return tag.currentStyle ? tag.currentStyle[attr] : getComputedStyle(tag, null)[attr];
+    }
+
+
+</script>
+</body>
+</html>
